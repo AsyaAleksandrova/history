@@ -5,7 +5,7 @@
    height: 40px;
    border-radius: 50%;
    cursor: col-resize;
-   position: absolute;
+   position: fixed;
    top: 50%;
    left: 50%;
    transform: translateX(-20px);
