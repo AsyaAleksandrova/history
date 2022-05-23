@@ -1,5 +1,5 @@
 .main__overflow{
-   height: 100vh;       /** get vh **/
+   height: calc(100 * var(--vh));
    position: absolute;
    top: 0;
    left: 0;

@@ -53,13 +53,14 @@
 
    <main class="main"> 
          <div class="main__scroll-image"></div>
-         <input type="range" min="0" max="94" value="50" class="main__scroll-line">
+         <input type="range" min="0" max="100" value="50" class="main__scroll-line">
          <div class="main__overflow main__overflow_gold">
             <h1 class="main__header">Династия<br>Романовых</h1>
             <h2 class="main__title main__black">Более 300 лет правления</h2>
-            <div class="main__border main__border_black"></div>
-            <img src="" alt="Ипатьевский дом" class="main__picture">
-            <p class="main__picture-description">до Ипатьевского дома</p>
+            <div class="main__picture-container">
+               <img src="<%=require('./images/index/Ipatiev_House_in_1930.jpg')%>" alt="Ипатьевский дом" class="main__picture">
+               <p>до Ипатьевского дома</p>
+            </div>
             <div class="main__map main__map_1917">
                <p class="main__map-description">Площадь страны 22,5 млн. км²</p>
             </div>
@@ -69,10 +70,11 @@
          </div>
          <div class="main__overflow main__overflow_black">
             <h2 class="main__title main__gold">Более 300 лет правления</h2>
-            <div class="main__border main__border_gold"></div>
-            <img src="" alt="Ипатьевский монастырь"
-               class="main__picture">
-            <p class="main__picture-description">от Ипатьевского монастыря</p>
+            <div class="main__picture-container">
+               <img src="<%=require('./images/index/NikanorChernecov_Vid_Ipatevskogo_monastyrja.jpg')%>" alt="Ипатьевский монастырь"
+                  class="main__picture">
+               <p>от Ипатьевского монастыря</p>
+            </div>
             <div class="main__map main__map_1613">
                <p class="main__map-description">Площадь страны- 5,8 млн. км²</p>
             </div>

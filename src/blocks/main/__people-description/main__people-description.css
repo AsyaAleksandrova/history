@@ -1,0 +1,5 @@
+.main__people-description {
+   text-align: center;
+   font-size: calc(var(--index) * 0.9);
+   margin-bottom: calc(var(--index) * (-1));
+}

@@ -9,22 +9,9 @@
    background-position: center;
    opacity: 0.8;
    background-image: url(../../../images/index/People_1613.png);
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
    justify-content: center;
-   -webkit-box-align: end;
-   -ms-flex-align: end;
    align-items: flex-end;
-}
-
-.main__people-description {
-   text-align: center;
-   font-size: calc(var(--index) * 0.9);
-   margin-bottom: calc(var(--index) * (-1));
-   opacity: 0.8;
 }
 
 @media screen and (min-width: 1268px) {

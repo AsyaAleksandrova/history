@@ -1,42 +1,8 @@
 .main__picture {
-   width: calc(var(--index) * 15);
-   height: calc(var(--index) * 10);
-   position: absolute;
-   top: calc(var(--index) * 12);
-   left: calc(var(--index) * 4);
-   -webkit-perspective: 30px;
-   perspective: 30px;
-   -webkit-box-shadow: 0px 0px 5px 0px #ffffff;
+   width: calc(var(--index) * 16);
+   height: calc(var(--index) * 9);
+   object-fit: cover;
    box-shadow: 0px 0px 5px 0px #ffffff;
-   -webkit-transition: all 0.5s ease;
-   -o-transition: all 0.5s ease;
-   transition: all 0.5s ease;
+   box-sizing: border-box;
 }
 
-.main__picture-description {
-   position: absolute;
-   display: block;
-   width: calc(var(--index) * 15);
-   height: calc(var(--index) * 1.5);
-   top: calc(var(--index) * 22);
-   left: calc(var(--index) * 5);
-   font-size: calc(var(--index) * 0.9);
-}
-
-.main__border {
-   width: calc(var(--index) * 18);
-   height: calc(var(--index) * 14);
-   position: absolute;
-   top: calc(var(--index) * 11);
-   left: -10px;
-}
-
-.main__border_gold {
-   border: 1px solid var(--color-gold);
-   background-color: rgba(147, 142, 132, 0.1);
-}
-
-.main__border_black {
-   border: 1.5px solid #000000;
-   background-color: rgba(250, 248, 248, 0.1);
-}

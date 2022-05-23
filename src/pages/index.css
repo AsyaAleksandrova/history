@@ -17,10 +17,13 @@
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__header/main__header.css);
 @import url(../blocks/main/__map/main__map.css);
+@import url(../blocks/main/__map-description/main__map-description.css);
 @import url(../blocks/main/__overflow/main__overflow.css);
 @import url(../blocks/main/__overflow/main__overflow_black.css);
 @import url(../blocks/main/__overflow/main__overflow_gold.css);
 @import url(../blocks/main/__people/main__people.css);
+@import url(../blocks/main/__people-description/main__people-description.css);
+@import url(../blocks/main/__picture-container/main__picture-container.css);
 @import url(../blocks/main/__picture/main__picture.css);
 @import url(../blocks/main/__scroll-image/main__scroll-image.css);
 @import url(../blocks/main/__scroll-line/main__scroll-line.css);
