@@ -1,0 +1,33 @@
+.menu__title {
+   display: none;
+   font-weight: 700;
+   font-size: 18px;
+   margin-top: 10px;
+   padding: 3px;
+   color: #000000;
+   background-color: transparent;
+   border: none;
+   position: relative;
+   transition: all 0.7s ease;
+}
+
+@media screen and (min-width: 1024px) {
+   .menu__title {
+      display: inline;
+      color: #9d9c9c;
+      cursor: pointer;
+   }
+
+   .menu__title:hover {
+      color: #f6ac52;
+   }
+}
+
+.menu__title_active {
+   display: block;
+   text-align: right;
+   width: 200px;
+   position: absolute;
+   right: 75px;
+   top: 5px;
+}

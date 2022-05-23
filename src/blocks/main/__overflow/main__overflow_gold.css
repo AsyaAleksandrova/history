@@ -1,0 +1,7 @@
+.main__overflow_gold {
+   width: 100vw;
+   background: url(../../../images/index/romanov_family.jpeg);
+   background-size: cover;
+   color: #000000;
+   z-index: 1;
+}

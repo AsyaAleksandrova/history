@@ -1,0 +1,21 @@
+.menu__container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: flex-start;
+   align-items: flex-end;
+   list-style-type: none;
+   text-align: left;
+   margin: 0;
+   padding: 10px 0px;
+}
+
+@media screen and (min-width: 1024px) {
+   .menu__container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 100px;
+   }
+}

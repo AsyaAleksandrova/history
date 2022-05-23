@@ -1,0 +1,30 @@
+.main__scroll-line {
+   position: absolute;
+   top: 0;
+   left: 0;
+   -webkit-appearance: none;
+   appearance: none;
+   width: 94%;
+   height: 100%;
+   background: transparent;
+   outline: none;
+   margin: 0;
+   transition: all .2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 3;
+}
+
+.main__scroll-line:hover {
+   background: transparent;
+}
+
+.main__scroll-line::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 2px;
+   height: 100vh;          /** get vh **/
+   background: #f6ac52;
+   cursor: col-resize;
+}

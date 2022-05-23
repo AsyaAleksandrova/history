@@ -1,0 +1,19 @@
+.menu__subtitle {
+   text-decoration: none;
+   text-align: center;
+   transition: all 0.5s ease;
+   color: #000000;
+   font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+   .menu__subtitle {
+      display: inline;
+      color: #9d9c9c;
+      font-size: 15px;
+   }
+
+   .menu__subtitle:hover {
+      color: #f6ac52;
+   }
+}

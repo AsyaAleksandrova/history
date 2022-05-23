@@ -1,0 +1,8 @@
+.main__overflow_black {
+   width: 50vw;
+   background-color: #282828;
+   -webkit-box-shadow: 2px 0px 6px 0px #000000;
+   box-shadow: 2px 0px 6px 0px #000000;
+   color: #f6ac52;
+   z-index: 2;
+}
