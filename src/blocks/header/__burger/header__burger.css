@@ -1,0 +1,22 @@
+.header__burger {
+   background-color: var(--color-background-icon);
+   border-radius: 50%;
+   border: none;
+   background-image: url(../../../images/icons/meat.png);
+   backdrop-filter: invert(var(--invert));
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 32px;
+   height: 32px;
+   margin-left: 10px;
+   padding: 0 3px;
+   z-index: 10;
+   opacity: 0.8;
+   cursor: pointer;
+   transition: all 0.4s ease-in-out;
+}
+
+.header__burger:hover {
+   box-shadow: 0 0 20px var(--color-main);
+}

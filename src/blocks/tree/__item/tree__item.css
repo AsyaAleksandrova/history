@@ -1,0 +1,12 @@
+.tree__item {
+   width: var(--card-width);
+   height: var(--card-height);
+   position: relative;
+   transition: all 0.7s ease;
+}
+
+@media screen and (min-width: 768px) {
+   .tree__item:hover {
+      transform: scale(110%);
+   }
+}

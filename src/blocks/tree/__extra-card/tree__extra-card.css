@@ -1,0 +1,31 @@
+.tree__extra-card {
+   width: var(--card-width);
+   height: var(--card-height);
+   position: relative;
+   transition: all 1s ease;
+   opacity: 1;
+
+}
+
+.tree__extra-card:hover {
+   background-color: #000000;
+}
+
+.tree__extra-description {
+   color: #ffffff;
+   font-size: 9px;
+   text-align: center;
+   margin: 1px;
+   opacity: 0;
+   transition: all 2s ease;
+}
+
+.tree__extra-card:hover .tree__extra-description {
+   opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+   .tree__extra-description {
+      font-size: 14px;
+   }
+}

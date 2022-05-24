@@ -1,0 +1,13 @@
+.tree__card-title {
+   color: #ffffff;
+   font-size: calc(var(--index) * 0.7);
+   text-align: center;
+   margin: 0;
+}
+
+.tree__card-description{
+      color: #ffffff;
+      font-size: calc(var(--index) * 0.7);
+      text-align: center;
+      margin: 0;
+}

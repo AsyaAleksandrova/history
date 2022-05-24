@@ -1,0 +1,40 @@
+.header__theme-switcher {
+   background-color: var(--color-grey);
+   border: 2px solid var(--color-main);
+   width: 50px;
+   height: 25px;
+   box-sizing: border-box;
+   border-radius: 12.5px;
+   margin-right: 10px;
+   z-index: 10;
+   opacity: 0.8;
+   cursor: pointer;
+   transition: all 0.5s ease;
+   position: relative;
+   --picture: url(../../../images/icons/moon.png);
+   --position: 2px;
+}
+
+.header__theme-switcher_light {
+   --picture: url(../../../images/icons/sun.png);
+   --position: 50%;
+}
+
+.header__theme-switcher:hover {
+   box-shadow: 0 0 20px var(--color-main);
+}
+
+.header__theme-switcher::before {
+   content: '';
+   position: absolute;
+   top: 0%;
+   left: var(--position);
+   width: 21px;
+   height: 21px;
+   border-radius: 50%;
+   background-color: var(--color-gradient);
+   background-image: var(--picture);
+   background-size: 15px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
