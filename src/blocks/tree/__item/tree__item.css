@@ -5,8 +5,16 @@
    transition: all 0.7s ease;
 }
 
-@media screen and (min-width: 768px) {
-   .tree__item:hover {
-      transform: scale(110%);
-   }
+.tree__item:hover:before {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: rgb(201, 130, 38);
+   background: radial-gradient(circle, rgba(201, 130, 38, 1) 0%, transparent 60%);
+}
+.tree__item:hover{
+   transform: scale(110%);
 }

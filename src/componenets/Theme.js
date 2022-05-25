@@ -1,62 +1,55 @@
-// Change theme
-
-const buttonTheme = document.querySelector('.header__settings');
-let themePage = 'unset'
-
-toggleTheme = (themePage) => {
-   switch (themePage) {
-      case 'thememon':
-         document.querySelector('.root').classList.remove('root_theme_light');
-         document.querySelectorAll('.link-href').forEach(link => {
-            link.href = link.href.replace('themesun', 'thememon');
-         });
-         buttonTheme.classList.remove('header__settings_light');
-         document.location.href = document.location.href.replace('themesun', 'thememon');
-         break;
-      case 'themesun':
-         document.querySelector('.root').classList.add('root_theme_light');
-         document.querySelectorAll('.link-href').forEach(link => {
-            link.href = link.href.replace('thememon', 'themesun');
-         });
-         buttonTheme.classList.add('header__settings_light');
-         document.location.href = document.location.href.replace('thememon', 'themesun');
-         break;
-      default:
-         document.location.href = document.location.href.concat('#themesun');
-         themePage = 'themesun';
-   };
-   return themePage;
-}
-
-readTheme = () => {
-   const str = document.location.href;
-   if (str.includes('theme')) {
-      themePage = str.slice((str.indexOf('theme')), (str.indexOf('theme') + 8));
-   };
-   return themePage;
-}
-
-themePage = readTheme();
-themePage = toggleTheme(themePage);
-
-buttonTheme.addEventListener('click', () => {
-   if (themePage == 'themesun') {
-      themePage = 'thememon';
-   } else {
-      themePage = 'themesun'
+export class Theme{
+   constructor(buttonSwitch, themeSelectors = ("themesun", "thememon"), linkChangeSelector) {
+      this._button = document.querySelector(buttonSwitch);
+      this._linkList = document.querySelectorAll(linkChangeSelector);
+      this._themeList = themeSelectors;
+      this._themePage = this._themeList[0];
    }
-   toggleTheme(themePage);
-   return themePage;
-});
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+   _readTheme() {
+      const str = document.location.href;
+      if (str.includes('theme')) {
+         this._themePage = str.slice((str.indexOf('theme')), (str.indexOf('theme') + 8));
+      };
+   }
 
-(function init100vh(){
-  function setHeight() {
-    var vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  setHeight();
-  window.addEventListener('resize', setHeight);
-})();
+   _switchLink(link) {
+      let str = link.href;
+      if (str.includes('theme')) {
+         const oldTheme = str.slice((str.indexOf('theme')), (str.indexOf('theme') + 8));
+         str = str.replace(oldTheme, this._themePage);
+      } else {
+         str = str.concat('#' + this._themePage);
+      }
+      link.href = str;
+   }
+
+   _toggleTheme() {
+      this._switchLink(document.location);
+      this._linkList.forEach(link => this._switchLink(link));
+      if (this._themePage == "themesun") {
+         this._button.classList.add('header__theme-switcher_light');
+         document.querySelector('.root').classList.add('root_theme_light') 
+      } else {
+         this._button.classList.remove('header__theme-switcher_light');
+         document.querySelector('.root').classList.remove('root_theme_light') 
+      }
+   }
+
+   _setListenerButton() {
+      this._button.addEventListener('click', () => {
+         if (this._themePage == "themesun") {
+            this._themePage = "thememon";
+         } else {
+            this._themePage = "themesun";
+         }
+         this._toggleTheme();
+      });        
+   }
+
+   initTheme(){
+      this._readTheme();
+      this._toggleTheme();
+      this._setListenerButton();
+   }
+}

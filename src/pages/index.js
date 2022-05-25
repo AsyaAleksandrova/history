@@ -22,3 +22,11 @@ const menuSelectors = {
 import { IconMenu } from '../componenets/IconMenu.js';
 const menuPage = new IconMenu(menuSelectors);
 menuPage.setListenerMenu();
+
+import { Theme } from '../componenets/Theme.js';
+const ThemePage = new Theme('.header__theme-switcher',("themesun", "thememon"), '.link-href');
+ThemePage.initTheme();
+
+import { Height } from '../componenets/Height.js';
+const pageHeight = new Height('--vh');
+pageHeight.setAttribute();

@@ -7,6 +7,7 @@
 @import url(../blocks/header/__theme-switcher/header__theme-switcher.css);
 @import url(../blocks/tree/tree.css);
 @import url(../blocks/tree/__background-video/tree__background-video.css);
+@import url(../blocks/tree/__overflow/tree__overflow.css);
 @import url(../blocks/tree/__card-side/tree__card-side.css);
 @import url(../blocks/tree/__card-title/tree__card-title.css);
 @import url(../blocks/tree/__content/tree__content.css);
@@ -14,4 +15,5 @@
 @import url(../blocks/tree/__item/tree__item.css);
 @import url(../blocks/tree/__link-icon/tree__link-icon.css);
 @import url(../blocks/tree/__picture/tree__picture.css);
+@import url(../blocks/tree/__picture-small/tree__picture-small.css);
 @import url(../blocks/canvas/canvas.css);

@@ -3,8 +3,6 @@
    height: var(--card-height);
    position: relative;
    transition: all 1s ease;
-   opacity: 1;
-
 }
 
 .tree__extra-card:hover {

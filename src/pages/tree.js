@@ -22,11 +22,7 @@ cardItems.forEach(card => {
 import { Canvas } from '../componenets/Canvas.js';
 
 const content = document.querySelector('.tree');
-const contentWidth = content.getBoundingClientRect().width;
-const contentHeight = content.getBoundingClientRect().height;
 const lineColor = "#f6ac52";
-
-
 const card_1 = document.querySelector('.item_1');
 const card_2 = document.querySelector('.item_2');
 const card_3 = document.querySelector('.item_3');
@@ -49,43 +45,58 @@ const card_21 = document.querySelector('.item_2_1');
 const card_25 = document.querySelector('.item_2_5');
 const card_26 = document.querySelector('.item_2_6');
 const card_27 = document.querySelector('.item_2_7');
-const card_width = card_1.getBoundingClientRect().width;
-const card_height = card_1.getBoundingClientRect().height;
+
+
 
 const redrawContent = () => {
-   canvas.matchCardsRightDown(card_1, card_2, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_2, card_3, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_2, card_4, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_2, card_5, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_4, card_8, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_5, card_10, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_6, card_10, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_11, card_13, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_12, card_13, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_13, card_14, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_13, card_15, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_15, card_16, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_16, card_17, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_17, card_18, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_21, card_2, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_5, card_25, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_25, card_7, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_26, card_11, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_6, card_26, card_width, card_height, lineColor);
-   canvas.matchCardsRightDown(card_27, card_9, card_width, card_height, lineColor);
-   canvas.matchCardsLeftDown(card_8, card_27, card_width, card_height, lineColor);                             
-   document.querySelector('.canvas').setAttribute('style', 'opacity: 1;');
+   canvas.matchCards(card_1, card_2, lineColor);
+   canvas.matchCards(card_2, card_3, lineColor);
+   canvas.matchCards(card_2, card_4, lineColor);
+   canvas.matchCards(card_2, card_5, lineColor);
+   canvas.matchCards(card_4, card_8, lineColor);
+   canvas.matchCards(card_5, card_10, lineColor);
+   canvas.matchCards(card_6, card_10, lineColor);
+   canvas.matchCards(card_11, card_13, lineColor);
+   canvas.matchCards(card_12, card_13, lineColor);
+   canvas.matchCards(card_13, card_14, lineColor);
+   canvas.matchCards(card_13, card_15, lineColor);
+   canvas.matchCards(card_15, card_16, lineColor);
+   canvas.matchCards(card_16, card_17, lineColor);
+   canvas.matchCards(card_17, card_18, lineColor);
+   canvas.matchCards(card_21, card_2, lineColor);
+   canvas.matchCards(card_5, card_25, lineColor);
+   canvas.matchCards(card_25, card_7, lineColor);
+   canvas.matchCards(card_26, card_11, lineColor);
+   canvas.matchCards(card_6, card_26, lineColor);
+   canvas.matchCards(card_27, card_9, lineColor);
+   canvas.matchCards(card_8, card_27, lineColor);  
+   setTimeout(function () {
+      document.querySelector('.canvas').setAttribute('style', 'opacity: 1;');
+   }, 2000)
 }
 
+const canvas = new Canvas(content, 'canvas');
 
-card_2.scrollIntoView({ block: "center", inline: "center" })
-const canvas = new Canvas(contentWidth, contentHeight, content, 'canvas');
-canvas.setCanvas();
-redrawContent();
+window.onload = function () {
+   card_2.scrollIntoView({block:"center", inline:"center"})
+   canvas.setCanvas();
+   redrawContent();
+}
 
 window.onresize = function () {
    canvas.removeCanvas();
    setTimeout(function () {
       redrawContent();
    }, 3000)
-}
+};
+
+
+// Set theme-switcher and height
+
+import { Theme } from '../componenets/Theme.js';
+const ThemePage = new Theme('.header__theme-switcher',("themesun", "thememon"), '.link-href');
+ThemePage.initTheme();
+
+import { Height } from '../componenets/Height.js';
+const pageHeight = new Height('--vh');
+pageHeight.setAttribute();
