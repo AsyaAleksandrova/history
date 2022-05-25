@@ -17,3 +17,10 @@
 @import url(../blocks/tree/__picture/tree__picture.css);
 @import url(../blocks/tree/__picture-small/tree__picture-small.css);
 @import url(../blocks/canvas/canvas.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_open/popup_open.css);
+@import url(../blocks/popup/__btnClose/popup__btnClose.css);
+@import url(../blocks/popup/__menu/popup__menu.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__subtitle/popup__subtitle.css);
+@import url(../blocks/popup/__subtitle-container/popup__subtitle-container.css);

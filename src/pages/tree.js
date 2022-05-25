@@ -100,3 +100,9 @@ ThemePage.initTheme();
 import { Height } from '../componenets/Height.js';
 const pageHeight = new Height('--vh');
 pageHeight.setAttribute();
+
+
+import { PopupWithSubtitle } from '../componenets/PopupWithSubtitle.js';
+const popupMenu = new PopupWithSubtitle('.popup_type_menu');
+popupMenu.setEventListeners();
+document.querySelector('.header__burger').addEventListener('click', () => popupMenu.open());

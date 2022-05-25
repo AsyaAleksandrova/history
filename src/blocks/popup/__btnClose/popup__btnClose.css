@@ -1,0 +1,24 @@
+.popup__btnClose {
+   background-color: var(--color-background-icon);
+   background-image: url(../../../images/icons/close.png);
+   backdrop-filter: invert(var(--invert));
+   border-radius: 50%;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 30px;
+   height: 30px;
+   border: none;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   cursor: pointer;
+   opacity: 1;
+   -webkit-transition: all 0.6s ease-in-out;
+   -o-transition: all 0.6s ease-in-out;
+   transition: all 0.6s ease-in-out;
+}
+
+.popup__btnClose:hover {
+   opacity: 0.5;
+}

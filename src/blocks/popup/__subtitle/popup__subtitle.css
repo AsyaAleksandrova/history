@@ -1,0 +1,13 @@
+.popup__subtitle {
+   color: var(--color-main);
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   text-transform: uppercase;
+   transition: all 0.5s ease;
+}
+
+.popup__subtitle:hover {
+   color: var(--color-gold_dark);
+}

@@ -1,0 +1,14 @@
+.popup__subtitle-container {
+   padding: 10px 0 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 7px;
+   list-style-type: none;
+   margin: 10px 2px;
+   display: none;
+}
+
+.popup__subtitle-container_open {
+   display: flex;
+}
