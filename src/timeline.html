@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <link rel="icon" href="<%=require('./images/icons/crown.png')%>">
+   <title>Династия Романовых</title>
+</head>
+<body class="root root_theme_light">
+   <header class="header">
+      <button type="button" class="header__burger"></button>
+      <a href="./index.html " class="header__title link-href">Династия Романовых</a>
+      <button type="button" class="header__theme-switcher header__theme-switcher_light"></button>
+   </header>
+   <main>
+      <section class="animation-line"></section>
+      <section class="photo-line"></section>
+      <section class="events-line"></section>
+   </main>
+
+   <section class="popup popup_type_menu">
+      <div class="popup__menu">
+         <a href="./index.html" class="popup__title link-href">Главная страница</a>
+         <a href="./tree.html" class="popup__title link-href">Родословное дерево</a>
+         <a href="./timeline.html" class="popup__title link-href">События правления</a>
+         <div class="popup__title-container">
+            <p class="popup__title open-container">Цари и императоры</p>
+            <ul class="popup__subtitle-container">
+               <li><a href="./imperators/MihFed.html" class="popup__subtitle link-href">Михаил Федорович</a></li>
+               <li><a href="./imperators/AlexMik.html" class="popup__subtitle link-href">Алексей Михайлович</a></li>
+               <li><a href="./imperators/Fedor.html" class="popup__subtitle link-href">Федор III</a></li>
+               <li><a href="./imperators/Ivan_5.html" class="popup__subtitle link-href">Иван V</a></li>
+               <li><a href="./imperators/Petr_1.html" class="popup__subtitle link-href">Петр I</a></li>
+               <li><a href="./imperators/Catherine_1.html" class="popup__subtitle link-href">Екатерина I</a></li>
+               <li><a href="./imperators/Petr_2.html" class="popup__subtitle link-href">Петр II</a></li>
+               <li><a href="./imperators/AnnaIo.html" class="popup__subtitle link-href">Анна Иоанновна</a></li>
+               <li><a href="./imperators/Ivan_6.html" class="popup__subtitle link-href">Иван VI</a></li>
+               <li><a href="./imperators/ElisPetr.html" class="popup__subtitle link-href">Елизавета Петровна</a></li>
+               <li><a href="./imperators/Petr_3.html" class="popup__subtitle link-href">Петр III</a></li>
+               <li><a href="./imperators/Catherine_2.html" class="popup__subtitle link-href">Екатерина II</a></li>
+               <li><a href="./imperators/Pavel_1.html" class="popup__subtitle link-href">Павел I</a></li>
+               <li><a href="./imperators/Alex_1.html" class="popup__subtitle link-href">Александр I</a></li>
+               <li><a href="./imperators/Nikola_1.html" class="popup__subtitle link-href">Николай I</a></li>
+               <li><a href="./imperators/Alex_2.html" class="popup__subtitle link-href">Александр II</a></li>
+               <li><a href="./imperators/Alex_3.html" class="popup__subtitle link-href">Александр III</a></li>
+               <li><a href="./imperators/Nikola_2.html" class="popup__subtitle link-href">Николай II</a></li>
+            </ul>
+         </div>
+         <button type="button" class="popup__btnClose"></button>
+      </div>
+   </section>
+
+   <section class="popup popup_type_foto-preview">
+      <div class="popup__preview">
+         <button type="button" class="popup__btnClose"></button>
+         <div class="popup__picture-container">
+            <img class="popup__picture">
+            <a href="" class="popup__picture-link" target="_blank"><span class="popup__picture-ref"></span></a>
+         </div>
+         <h2 class="popup__description"></h2>
+      </div>
+   </section>
+
+   <template id="photo">
+      <div class="photo-line__container">
+         <img class="photo-line__picture">
+         <p class="photo-line__year" style="display: none;"></p>
+         <a href="" class="photo-line__ref" style="display: none;"></a>
+      </div>
+   </template>
+
+   <template id="event">
+      <div class="events-line__item">
+         <h2 class="events-line__title"></h2>
+         <p class="events-line__description"></p>
+         <a class="events-line__link" target="_blank">Подробнее &rarr;</a>
+         <div class="events-line__period">
+            <p class="events-line__year-start"></p>
+            <p class="events-line__year-end"></p>
+         </div>
+      </div>
+   </template>
+
+</body>
+</html>

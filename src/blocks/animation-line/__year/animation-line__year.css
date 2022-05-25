@@ -1,0 +1,10 @@
+.animation-line__year {
+   color: var(--color-main);
+   font-size: 20px;
+   font-family: var(--font);
+   margin: 7px 0;
+}
+
+.animation-line__year_color_gold {
+   color: var(--color-gold);
+}

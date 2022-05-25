@@ -3,10 +3,10 @@
    top: 0;
    left: 0;
    right: 0;
-   background-color: transparent;
+   background: linear-gradient(180deg, var(--color-background) 20%, transparent 130%);
    backdrop-filter: blur(5px);
    box-shadow: 0px -7px 20px var(--color-main);
-   width: 100%;
+   width: 100vw;
    height: 55px;
    padding: 0 10px;
    box-sizing: border-box;

@@ -6,7 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
    entry: {
       index: './src/pages/index.js',
-      tree: './src/pages/tree.js'
+      tree: './src/pages/tree.js',
+      timeline: './src/pages/timeline.js'
    },
    output: {
       path: path.resolve(__dirname, 'dist'),
@@ -51,6 +52,10 @@ module.exports = {
          filename: 'tree.html',
          template: './src/tree.html'
       }),
+      new HtmlWebpackPlugin({
+         filename: 'timeline.html',
+         template: './src/timeline.html'
+      }),      
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin()
    ]
