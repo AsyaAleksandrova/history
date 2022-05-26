@@ -18,12 +18,14 @@ import { YearLine } from '../componenets/YearLine.js';
 let firstYear = 1613;
 let lastYear = 1703;
 
-
+photoList.sort((a, b) => a.yearStart - b.yearStart)
 
 photoList.forEach(photo => {
    const newPhoto = new PictureLine(pictureLine);
    newPhoto.insertPicture(photo);
 })
+
+eventList.sort((a, b) => a.yearStart - b.yearStart)
 
 eventList.forEach(event => {
    const newEvent = new EventMessage(eventsLine);
@@ -35,13 +37,13 @@ yearLine.insertYearLine();
 
 
 
-const h = Math.max(pictureLine.getBoundingClientRect().height,
-   eventsLine.getBoundingClientRect().height,
-   animationLine.getBoundingClientRect().height);
+// const h = Math.max(pictureLine.getBoundingClientRect().height,
+//    eventsLine.getBoundingClientRect().height,
+//    animationLine.getBoundingClientRect().height);
 
-animationLine.setAttribute('style', `height: ${h}px`);
-eventsLine.setAttribute('style', `height: ${h}px`);
-pictureLine.setAttribute('style', `height: ${h}px`);
+// animationLine.setAttribute('style', `height: ${h}px`);
+// eventsLine.setAttribute('style', `height: ${h}px`);
+// pictureLine.setAttribute('style', `height: ${h}px`);
 
 
 
@@ -65,39 +67,15 @@ const popupMenu = new PopupWithSubtitle('.popup_type_menu');
 popupMenu.setEventListeners();
 document.querySelector('.header__burger').addEventListener('click', () => popupMenu.open());
 
+import { SettingsMenu } from '../componenets/SettingsMenu.js';
 
-const inputList = document.querySelectorAll('.settings-line__radio-input');
-
-inputList.forEach(input => {
-   if (input.checked) {
-      input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.add('settings-line__radio_active');
-   } else {
-      input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.remove('settings-line__radio_active');
-   }  
-   input.addEventListener('click', () => {
-      if (input.checked) {
-         input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.add('settings-line__radio_active');
-      } else {
-         input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.remove('settings-line__radio_active');
-      }
-   })
-})
+const setMenu = new SettingsMenu('.settings-line', '.settings-line__hide-icon', '.settings-line__radio-input');
+setMenu.setListeners();
 
 
 
-// const wrapper = document.querySelector('.animation-line');
-// const indexHight = window.innerHeight;
-// let currentYear = 1620;
-// let firstYear = 1612;
-// let lastYear = 1630;
-// const areaPictures = document.querySelector('.photo-line');
-// const areaEvents = document.querySelector('.events-line');
-// const templatePicture = document.querySelector('#photo').content;
-// const templateEvent = document.querySelector('#event').content;
-// let inverse = false;
 
 
-// let offset = 0;
 
 // const drawLine = () => {
 //    const colorMain = window.getComputedStyle(document.querySelector('.animation-line__year')).color;
@@ -193,44 +171,3 @@ inputList.forEach(input => {
 //       };     
 //    });
 // };
-
-// const findCurrentYear = () => {
-//    yearLine.forEach(year => {
-//       const top = year.getBoundingClientRect().top;
-//       if (top > (indexHight / 2.6)) {
-//          year.classList.add('animation-line__year_color_gold');
-//       } else {
-//          year.classList.remove('animation-line__year_color_gold');
-//          currentYear = year.textContent;
-//       }
-//       if (top < 0) {
-//          firstYear = year.textContent;
-//       };
-//       if (top < (indexHight)) {
-//          lastYear = year.textContent;
-//       };
-//    });
-// };
-
-
-// window.onload = function () {
-//    setCanvas();
-//    drawLine();
-//    findCurrentYear();
-//    changePictuteList(firstYear, lastYear, false);
-//    changeEventList(firstYear, lastYear, false);
-// }
-
-
-// window.onscroll = function () {
-//    if (offset > window.scrollY) {
-//       inverse = true;
-//    } else {
-//       inverse = false;
-//    }
-//    offset = window.scrollY;
-//    drawLine();
-//    findCurrentYear();
-//    changePictuteList(firstYear, lastYear, inverse);
-//    changeEventList(firstYear, lastYear, inverse);
-// }

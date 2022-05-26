@@ -1,0 +1,9 @@
+.settings-line__fieldset {
+   margin: 10px 0 0;
+   padding: 0;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   background: transparent;
+}

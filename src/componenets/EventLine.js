@@ -21,6 +21,7 @@ export class EventMessage{
       this._link.href = element.link;
       this._start = element.yearStart;
       this._end = element.yearEnd;
+      this._userCard.classList.add(element.target)
       this._setListener();
    }
 

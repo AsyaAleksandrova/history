@@ -13,6 +13,9 @@
    align-items: flex-end;
    gap: calc(var(--index) * 0.5);
    font-size: 14px;
+   transition: all 1s ease;
+   transform: translateX(0);
+   opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -26,4 +29,15 @@
    .events-line {
       width: calc(100% - 100px - 600px);
    }
+}
+
+.events-line_display_gallery{
+   transform: translateX(100%);
+   opacity: 0;
+}
+
+.events-line_display_message{
+   transform: translateX(0);
+   opacity: 1;
+   width: calc(100% - 100px);
 }

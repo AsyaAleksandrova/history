@@ -30,3 +30,7 @@
 @import url(../blocks/popup/__description/popup__description.css);
 @import url(../blocks/canvas/canvas.css);
 @import url(../blocks/settings-line/settings-line.css);
+@import url(../blocks/settings-line/__fieldset/settings-line__fieldset.css);
+@import url(../blocks/settings-line/__radio-input/settings-line__radio-input.css);
+@import url(../blocks/settings-line/__radio/settings-line__radio.css);
+@import url(../blocks/settings-line/__hide-icon/settings-line__hide-icon.css);
