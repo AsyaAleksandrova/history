@@ -1,18 +1,20 @@
 import { PopupPicturePreview } from "./PopupPicturePreview.js";
 
 export class PictureLine{
-   constructor() {
+   constructor(container) {
       this._template = document.querySelector('#photo').content;
       this._userCard = this._template.querySelector('.photo-line__container').cloneNode(true);
       this._picture = this._userCard.querySelector('.photo-line__picture');
       this._year = this._userCard.querySelector('.photo-line__year');
       this._ref = this._userCard.querySelector('.photo-line__ref');
+      this._container = container
    }
 
    _setListener() {
       this._userCard.addEventListener('click', () => {
          const popup = new PopupPicturePreview('.popup_type_foto-preview');
-         popup.open(this._picture, this._ref.href, this._ref.textContent);
+         popup.setEventListeners();
+         popup.open(this._picture, this._ref, this._ref);
       })
    }
    _createPicture(element) {
@@ -24,8 +26,8 @@ export class PictureLine{
       this._setListener();
    }
 
-   insertPicture(element, container) {
+   insertPicture(element) {
       this._createPicture(element);
-      container.append(this._userCard);
+      this._container.append(this._userCard);
    }
 }

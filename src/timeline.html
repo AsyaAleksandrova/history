@@ -9,11 +9,47 @@
 </head>
 <body class="root root_theme_light">
    <header class="header">
-      <button type="button" class="header__burger"></button>
+      <ion-icon name="list-circle-outline" class="header__burger"></ion-icon>
       <a href="./index.html " class="header__title link-href">Династия Романовых</a>
       <button type="button" class="header__theme-switcher header__theme-switcher_light"></button>
    </header>
    <main>
+      <div class="settings-line">
+         <fieldset class="settings-line__fieldset">
+            <label for="gallery" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="images-outline"></ion-icon>
+               <input type="radio" name="display" value="gallery" id="gallery" class="settings-line__radio-input">
+            </label>   
+            <label for="messages" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="chatbox-ellipses-outline"></ion-icon>
+               <input type="radio" name="display" value="messages" id="messages" class="settings-line__radio-input">
+            </label>
+            <label for="mix" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="grid-outline"></ion-icon>
+               <input type="radio" name="display" value="mix" id="mix" class="settings-line__radio-input" checked>
+            </label>
+         </fieldset>
+
+
+         <fieldset class="settings-line__fieldset">
+            <label for="education" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="school-outline"></ion-icon>
+               <input checked type="checkbox" name="education" id="education" class="settings-line__radio-input settings-line__radio-input-2">
+            </label>
+            <label for="economy" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="business-outline"></ion-icon>
+               <input checked type="checkbox" name="economy" id="economy" class="settings-line__radio-input settings-line__radio-input-3">
+            </label>
+            <label for="war" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="flame-outline"></ion-icon>
+               <input type="checkbox" name="war" id="war" class="settings-line__radio-input settings-line__radio-input-4">
+            </label>
+            <label for="people" class="settings-line__label">
+               <ion-icon class="settings-line__radio" name="accessibility-outline"></ion-icon>
+               <input checked type="checkbox" name="people" id="people" class="settings-line__radio-input settings-line__radio-input-5">
+            </label>
+         </fieldset>
+      </div>
       <section class="animation-line"></section>
       <section class="photo-line"></section>
       <section class="events-line"></section>
@@ -47,13 +83,13 @@
                <li><a href="./imperators/Nikola_2.html" class="popup__subtitle link-href">Николай II</a></li>
             </ul>
          </div>
-         <button type="button" class="popup__btnClose"></button>
+         <ion-icon name="close-circle-outline" class="popup__btnClose"></ion-icon>
       </div>
    </section>
 
    <section class="popup popup_type_foto-preview">
       <div class="popup__preview">
-         <button type="button" class="popup__btnClose"></button>
+         <ion-icon name="close-circle-outline" class="popup__btnClose"></ion-icon>
          <div class="popup__picture-container">
             <img class="popup__picture">
             <a href="" class="popup__picture-link" target="_blank"><span class="popup__picture-ref"></span></a>
@@ -81,6 +117,7 @@
          </div>
       </div>
    </template>
-
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

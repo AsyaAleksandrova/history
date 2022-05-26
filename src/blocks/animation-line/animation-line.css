@@ -1,13 +1,8 @@
 .animation-line {
    background-color: var(--color-background);
-   min-height: calc(100 * var(--vh));
    width: 70px;
    padding: 70px 0 50px 15px;
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: column;
    flex-direction: column;
+   justify-content: space-between;
 }

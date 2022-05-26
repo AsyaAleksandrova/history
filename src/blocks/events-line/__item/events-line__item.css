@@ -32,7 +32,7 @@
 .events-line__item_active {
    -webkit-box-shadow: 0 0 30px #1e9bff;
    box-shadow: 0 0 30px #1e9bff;
-   border: 0.5px solid #1e9bff
+   border: 0.5px solid #1e9bff;
 }
 
 

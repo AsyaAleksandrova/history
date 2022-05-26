@@ -3,8 +3,6 @@ import './timeline.css'
 import { eventList } from '../utils/eventsList.js';
 import { photoList } from '../utils/photoList.js'
 
-// Set theme-switcher and height
-
 const animationLine = document.querySelector('.animation-line');
 const pictureLine = document.querySelector('.photo-line');
 const eventsLine = document.querySelector('.events-line');
@@ -12,27 +10,41 @@ const eventsLine = document.querySelector('.events-line');
 import { Canvas } from '../componenets/Canvas.js';
 const canvas = new Canvas(animationLine, 'canvas');
 
+import { PictureLine } from '../componenets/PictureLine.js';
+import { EventMessage } from '../componenets/EventLine.js';
 import { YearLine } from '../componenets/YearLine.js';
+
 
 let firstYear = 1613;
 let lastYear = 1703;
 
+
+
+photoList.forEach(photo => {
+   const newPhoto = new PictureLine(pictureLine);
+   newPhoto.insertPicture(photo);
+})
+
+eventList.forEach(event => {
+   const newEvent = new EventMessage(eventsLine);
+   newEvent.insertEvent(event);
+})
+
 const yearLine = new YearLine(firstYear, lastYear, animationLine);
 yearLine.insertYearLine();
 
-import { PictureLine } from '../componenets/PictureLine.js';
 
-photoList.forEach(photo => {
-   const newPhoto = new PictureLine();
-   newPhoto.insertPicture(photo, pictureLine);
-})
 
-import { EventMessage } from '../componenets/EventLine.js'
+const h = Math.max(pictureLine.getBoundingClientRect().height,
+   eventsLine.getBoundingClientRect().height,
+   animationLine.getBoundingClientRect().height);
 
-eventList.forEach(event => {
-   const newEvent = new EventMessage();
-   newEvent.insertEvent(event, eventsLine);
-})
+animationLine.setAttribute('style', `height: ${h}px`);
+eventsLine.setAttribute('style', `height: ${h}px`);
+pictureLine.setAttribute('style', `height: ${h}px`);
+
+
+
 
 
 
@@ -49,11 +61,27 @@ pageHeight.setAttribute();
 
 
 import { PopupWithSubtitle } from '../componenets/PopupWithSubtitle.js';
-import { EventLine } from '../componenets/EventLine';
 const popupMenu = new PopupWithSubtitle('.popup_type_menu');
 popupMenu.setEventListeners();
 document.querySelector('.header__burger').addEventListener('click', () => popupMenu.open());
 
+
+const inputList = document.querySelectorAll('.settings-line__radio-input');
+
+inputList.forEach(input => {
+   if (input.checked) {
+      input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.add('settings-line__radio_active');
+   } else {
+      input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.remove('settings-line__radio_active');
+   }  
+   input.addEventListener('click', () => {
+      if (input.checked) {
+         input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.add('settings-line__radio_active');
+      } else {
+         input.closest('.settings-line__label').querySelector('.settings-line__radio').classList.remove('settings-line__radio_active');
+      }
+   })
+})
 
 
 

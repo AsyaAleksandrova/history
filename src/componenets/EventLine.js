@@ -1,5 +1,5 @@
 export class EventMessage{
-   constructor() {
+   constructor(container) {
       this._template = document.querySelector('#event').content;
       this._userCard = this._template.querySelector('.events-line__item').cloneNode(true);
       this._title = this._userCard.querySelector('.events-line__title');
@@ -7,6 +7,7 @@ export class EventMessage{
       this._link = this._userCard.querySelector('.events-line__link');
       this._start = this._userCard.querySelector('.events-line__year-start');
       this._end = this._userCard.querySelector('.events-line__year-end');
+      this._container = container;
    }
 
    _setListener() {
@@ -23,8 +24,8 @@ export class EventMessage{
       this._setListener();
    }
 
-   insertEvent(element, container) {
+   insertEvent(element) {
       this._createEvent(element);
-      container.append(this._userCard);
+      this._container.append(this._userCard);
    }
 }

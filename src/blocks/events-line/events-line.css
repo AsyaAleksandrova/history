@@ -9,7 +9,7 @@
    font-family: var(--font);
    display: flex;
    flex-direction: column;
-   justify-content: start;
+   justify-content: space-between;
    align-items: flex-end;
    gap: calc(var(--index) * 0.5);
    font-size: 14px;

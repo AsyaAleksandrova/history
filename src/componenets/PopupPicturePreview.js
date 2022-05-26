@@ -10,7 +10,7 @@ export class PopupPicturePreview extends Popup{
    }
    open(picture, sourceLink = null, sourceRef = null) {
       this._picture.src = picture.src;
-      this._description = picture.alt;
+      this._description.textContent = picture.alt;
       if (sourceRef) {
          this._sourceLink.href = sourceLink.href;
          this._sourceRef.textContent = sourceRef.textContent;         
