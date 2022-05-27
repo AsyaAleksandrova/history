@@ -3,14 +3,14 @@
    margin-left: 5px;
    width: 45px;
    height: 45px;
-   border-radius: 50%;
+   border-radius: 5px;
    background-size: 35px;
    background-repeat: no-repeat;
    background-position: center;
    transition: all 0.7s ease;
-   background-color: #d9d7d7;
+   background-color: transparent;
    box-shadow:
-      4px 4px 8px #4d4d4d,
+      4px 4px 8px #8b8b8b,
       inset -4px -4px 6px -3px #4d4d4d,
       -5px -5px 10px #ececec,
       inset 5px 5px 8px -4px #ececec;

@@ -73,22 +73,22 @@
    border: 7px solid transparent;
 }
 .education::before {
-   border-top: 7px solid #1eff5e;
-   border-right: 7px solid #1eff5e;
+   border-top: 7px solid #828947;
+   border-right: 7px solid #828947;
 }
 .economy::before{
-   border-top: 7px solid #ffc31e;
-   border-right: 7px solid #ffc31e;
+   border-top: 7px solid #ffb81e;
+   border-right: 7px solid #ffb81e;
 }
 
 .war::before{
-   border-top: 7px solid #ff1e35;
-   border-right: 7px solid #ff1e35;
+   border-top: 7px solid #c9626c;
+   border-right: 7px solid #c9626c;
 }
 
 .people::before{
-   border-top: 7px solid #c9c7c7;
-   border-right: 7px solid #c9c7c7;
+   border-top: 7px solid #80bada;
+   border-right: 7px solid #80bada;
 }
 
 .events-line__item_hidden{

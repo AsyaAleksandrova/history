@@ -9,20 +9,10 @@
    text-align: left;
    font-size: calc(var(--index) * 2);
    letter-spacing: 2px;
-   -webkit-animation: title_anime 5s linear infinite;
-   animation: title_anime 5s linear infinite;
+   animation: title_anime 10s linear infinite;
 }
 
 .main__black {
-   background: -webkit-gradient(linear,
-         left top, right top,
-         from(rgb(0, 0, 0)),
-         color-stop(20%, rgba(245, 240, 234, 1)),
-         color-stop(40%, rgba(0, 0, 0, 1)));
-   background: -o-linear-gradient(left,
-         rgb(0, 0, 0) 0%,
-         rgba(245, 240, 234, 1) 20%,
-         rgba(0, 0, 0, 1) 40%);
    background: linear-gradient(90deg,
          rgb(0, 0, 0) 0%,
          rgba(245, 240, 234, 1) 20%,
@@ -32,15 +22,6 @@
 }
 
 .main__gold {
-   background: -webkit-gradient(linear,
-         left top, right top,
-         from(rgba(147, 145, 143, 1)),
-         color-stop(20%, rgba(245, 240, 234, 1)),
-         color-stop(40%, rgba(147, 145, 143, 1)));
-   background: -o-linear-gradient(left,
-         rgba(147, 145, 143, 1) 0%,
-         rgba(245, 240, 234, 1) 20%,
-         rgba(147, 145, 143, 1) 40%);
    background: linear-gradient(90deg,
          rgba(147, 145, 143, 1) 0%,
          rgba(245, 240, 234, 1) 20%,
@@ -49,22 +30,12 @@
    -webkit-text-fill-color: transparent;
 }
 
-@-webkit-keyframes title_anime {
-   from {
-      background-position: -10px;
-   }
-
-   to {
-      background-position: calc(var(--index) * 20);
-   }
-}
-
 @keyframes title_anime {
    from {
-      background-position: -10px;
+      background-position: -30px;
    }
 
    to {
-      background-position: calc(var(--index) * 20);
+      background-position: calc(var(--index) * 35);
    }
 }

@@ -7,8 +7,8 @@
    left: unset;
    top: 10px;
    border-radius: 10px 0 0 10px;
-   background-color: rgba(217, 215, 215, 0.5);
-   backdrop-filter: blur(5px);
+   background-color: transparent;
+   backdrop-filter: blur(1px);
    transition: all 0.5s ease-in-out;
 }
 

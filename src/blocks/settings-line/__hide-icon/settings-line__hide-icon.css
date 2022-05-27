@@ -15,25 +15,23 @@
    width: 10px;
    height: 2px;
    position: absolute;
-   top: 15px;
+   top: 14px;
    transition: all 1s ease;
 }
 
 .settings-line__hide-icon::before{
-   transform: rotate(40deg);
-   left: 6px;
+   transform: rotate(-40deg);
+   left: 7px;
 }
 .settings-line__hide-icon::after{
-   transform: rotate(-40deg);
-   left: 13px;
+   transform: rotate(40deg);
+   left: 14px;
 }
 
 .settings-line__hide-icon_hidden::before {
-   transform: rotate(-40deg);
-   top: 13px;
+   transform: rotate(40deg);
 }
 
 .settings-line__hide-icon_hidden::after {
-   transform: rotate(40deg);
-   top: 13px;
+   transform: rotate(-40deg);
 }

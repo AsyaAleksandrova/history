@@ -24,41 +24,41 @@
    z-index: -1;
    transition: all 1s ease-in-out;
    border-radius: 5px;
-   background-color: #1e9bff;
-   box-shadow: 0 0 15px #1e9bff,
-      0 0 30px #1e9bff,
-      0 0 45px #1e9bff,
-      0 0 60px #1e9bff;
+   background-color: #789cba;
+   box-shadow: 0 0 15px #5bb4fc,
+      0 0 30px #5bb4fc,
+      0 0 45px #5bb4fc,
+      0 0 60px #5bb4fc;
 }
 
 .settings-line__radio-input-2:checked::before {
-   background-color: #8efbad;
-   box-shadow: 0 0 15px #1eff5e,
-      0 0 30px #1eff5e,
-      0 0 45px #1eff5e,
-      0 0 60px #1eff5e;
+   background-color: #828947;
+   box-shadow: 0 0 15px #828947,
+      0 0 30px #828947,
+      0 0 45px #828947,
+      0 0 60px #828947;
 }
 
 .settings-line__radio-input-3:checked::before {
-   background-color: #fad675;
-   box-shadow: 0 0 15px #ffc31e,
-      0 0 30px #ffc31e,
-      0 0 45px #ffc31e,
-      0 0 60px #ffc31e;
+   background-color: #edb02a;
+   box-shadow: 0 0 15px #ffb81e,
+      0 0 30px #ffb81e,
+      0 0 45px #ffb81e,
+      0 0 60px #ffb81e;
 }
 
 .settings-line__radio-input-4:checked::before {
-   background-color: #f48f99;
-   box-shadow: 0 0 15px #ff1e35,
-      0 0 30px #ff1e35,
-      0 0 45px #ff1e35,
-      0 0 60px #ff1e35;
+   background-color: #ca7981;
+   box-shadow: 0 0 15px #c9626c,
+      0 0 30px #c9626c,
+      0 0 45px #c9626c,
+      0 0 60px #c9626c;
 }
 
 .settings-line__radio-input-5:checked::before {
-   background-color: #c9c7c7;
-   box-shadow: 0 0 15px #c9c7c7,
-      0 0 30px #c9c7c7,
-      0 0 45px #c9c7c7,
-      0 0 60px #c9c7c7;
+   background-color: #80bada;
+   box-shadow: 0 0 15px #80bada,
+      0 0 30px #80bada,
+      0 0 45px #80bada,
+      0 0 60px #80bada;
 }

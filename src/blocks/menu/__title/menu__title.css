@@ -14,8 +14,6 @@
 @media screen and (min-width: 1024px) {
    .menu__title {
       display: inline;
-      color: #9d9c9c;
-      cursor: pointer;
    }
 
    .menu__title:hover {

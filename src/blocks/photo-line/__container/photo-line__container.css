@@ -1,6 +1,8 @@
 .photo-line__container {
    width: 90px;
    height: 90px;
+   border-radius: 5px;
+   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
    .photo-line__container {

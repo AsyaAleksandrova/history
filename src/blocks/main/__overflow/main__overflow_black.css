@@ -1,8 +1,9 @@
 .main__overflow_black {
    width: 50%;
-   background-color: #151515;
+   background-color: rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(3px);
    box-shadow: 2px 0px 6px 0px #000000;
-   color: #f6ac52;
+   color: #000000;
    border-color: #f6ac52;
    z-index: 2;
 }

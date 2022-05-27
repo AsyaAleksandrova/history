@@ -1,6 +1,6 @@
 .main__scroll-line {
    position: fixed;
-   top: 0;
+   top: 55px;
    left: 0;
    appearance: none;
    width: 100%;
@@ -23,6 +23,6 @@
    appearance: none;
    width: 2px;
    height: calc(100 * var(--vh));
-   background: #f6ac52;
+   background: #000000;
    cursor: col-resize;
 }
