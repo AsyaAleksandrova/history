@@ -15,4 +15,11 @@ export class PopupWithSubtitle extends Popup{
       });
       super.setEventListeners();
    }
+   close() {
+      this._popup.querySelectorAll('.popup__subtitle-container')
+         .forEach(container => {
+            container.classList.remove('popup__subtitle-container_open')
+      })
+      super.close();
+   }
 }

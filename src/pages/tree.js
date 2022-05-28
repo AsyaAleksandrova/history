@@ -8,12 +8,12 @@ bgVideo.addEventListener('click', function () {
 });
 
 // Set sliders for portrait-cards 
-import { Portrait } from '../componenets/Portrait.js';
+import { PortraitInfiniteRotation } from '../componenets/PortraitInfiniteRotation.js';
 
 const cardItems = document.querySelectorAll('.tree__item');
 
 cardItems.forEach(card => {
-   const newPortrait = new Portrait(card, '.tree__card-side');
+   const newPortrait = new PortraitInfiniteRotation(card, '.tree__card-side', 1);
    newPortrait.setInfiniteSlider();
 })
 

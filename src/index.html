@@ -8,82 +8,75 @@
    <title>Династия Романовых</title>
 </head>
 <body class="root root_locked">
-   <header class="menu">
-      <nav>
-         <ul class="menu__container">
-            <li class="menu__item">
-               <a href="./tree.html " class="menu__link link-href">
-                  <span class="menu__title">Родословное дерево</span>
-               </a>
-               <span class="menu__icon menu__icon_type_tree"></span>
-            </li>
-            <li class="menu__item">
-               <a href="./timeline.html " class="menu__link link-href">
-                  <span class="menu__title">Временая лента</span>
-               </a>
-               <span class="menu__icon menu__icon_type_timeline"></span>
-            </li>
-            <li class="menu__item">
-               <span class="menu__title">Цари и императоры</span>
-               <ul class="menu__subtitle-container">
-                  <li><a href="./imperators/MihFed.html " class="menu__subtitle menu__link link-href">-Михаил Федорович-</a></li>
-                  <li><a href="./imperators/AlexMik.html " class="menu__subtitle menu__link link-href">Алексей Михайлович</a></li>
-                  <li><a href="./imperators/Fedor.html " class="menu__subtitle menu__link link-href">------Федор III------</a></li>
-                  <li><a href="./imperators/Ivan_5.html " class="menu__subtitle menu__link link-href">-------Иван V-------</a></li>
-                  <li><a href="./imperators/Petr_1.html " class="menu__subtitle menu__link link-href">-------Петр I-------</a></li>
-                  <li><a href="./imperators/Catherine_1.html " class="menu__subtitle menu__link link-href">----Екатерина I----</a></li>
-                  <li><a href="./imperators/Petr_2.html " class="menu__subtitle menu__link link-href">-------Петр II-------</a></li>
-                  <li><a href="./imperators/AnnaIo.html " class="menu__subtitle menu__link link-href">--Анна Иоанновна--</a></li>
-                  <li><a href="./imperators/Ivan_6.html " class="menu__subtitle menu__link link-href">------Иван VI------</a></li>
-                  <li><a href="./imperators/ElisPetr.html " class="menu__subtitle menu__link link-href">Елизавета Петровна</a></li>
-                  <li><a href="./imperators/Petr_3.html " class="menu__subtitle menu__link link-href">------Петр III------</a></li>
-                  <li><a href="./imperators/Catherine_2.html " class="menu__subtitle menu__link link-href">----Екатерина II----</a></li>
-                  <li><a href="./imperators/Pavel_1.html " class="menu__subtitle menu__link link-href">-------Павел I-------</a></li>
-                  <li><a href="./imperators/Alex_1.html " class="menu__subtitle menu__link link-href">-----Александр I-----</a></li>
-                  <li><a href="./imperators/Nikola_1.html " class="menu__subtitle menu__link link-href">-----Николай I-----</a></li>
-                  <li><a href="./imperators/Alex_2.html " class="menu__subtitle menu__link link-href">----Александр II----</a></li>
-                  <li><a href="./imperators/Alex_3.html " class="menu__subtitle menu__link link-href">----Александр III----</a></li>
-                  <li><a href="./imperators/Nikola_2.html " class="menu__subtitle menu__link link-href">-----Николай II-----</a></li>
-               </ul>
-               <span class="menu__icon menu__icon_type_king"></span>
-            </li>
-         </ul>
-      </nav>
-      <button type="button" class="header__theme-switcher" style="display: none;"></button>
+   <header class="header">
+      <ion-icon name="list-circle-outline" class="header__burger"></ion-icon>
+      <a href="./index.html " class="header__title link-href">Династия Романовых</a>
+      <button type="button" class="header__theme-switcher header__theme-switcher_light"></button>
    </header>
-
    <main class="main"> 
-         <ion-icon name="code-outline" class="main__scroll-image"></ion-icon>
-         <input type="range" min="0" max="10000" value="5000" class="main__scroll-line">
+      <section class="onload">
+         <img src="<%=require('./images/portraits/MikhaelFedorovich_.jpg')%>" alt="Михаил Федорович"
+            class="onload__portrait">
+         <img src="<%=require('./images/portraits/AlekseyTishaishiy.jpg')%>" alt="Алексей Михайлович"
+            class="onload__portrait">
+         <img src="<%=require('./images/portraits/FedorAlekseevich.jpg')%>" alt="Федор III" class="onload__portrait ">
+         <img src="<%=require('./images/portraits/IvanAlekseevich.jpg')%>" alt="Иван V" class="onload__portrait ">
+         <img src="<%=require('./images/portraits/Petr-1.jpg')%>" alt="Петр I" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Сatherine-1.jpg')%>" alt="Екатерина I" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Petr-2.jpg')%>" alt="Петр II" class="onload__portrait">
+         <img src="<%=require('./images/portraits/AnnaIoannovna.jpg')%>" alt="Анна Иоанновна" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Ivan-4.jpg')%>" alt="Иван VI" class="onload__portrait">
+         <img src="<%=require('./images/portraits/ElisavetaPetrovna.jpg')%>" alt="Елизавета Петровна" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Petr-3.jpg')%>" alt="Петр III" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Сatherine-2.jpg')%>" alt="Екатерина II" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Pavel-1.jpg')%>" alt="Павел I" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Aleksandr-1.jpg')%>" alt="Александр I" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Nikola-1.jpg')%>" alt="Николай I" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Aleksandr-2.jpg')%>" alt="Александр II" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Aleksandr-3.jpg')%>" alt="Александр III" class="onload__portrait">
+         <img src="<%=require('./images/portraits/Nikola-2.jpg')%>" alt="Николай II" class="onload__portrait active">
+      </section>
+      <section>
+         <ion-icon name="chevron-back-outline" class="main__arrow main__arrow_left"></ion-icon>
+         <ion-icon name="chevron-forward-outline" class="main__arrow main__arrow_right"></ion-icon>
+         <h2 class="main__year-counter"><span class="main__year-start">1894</span> - <span class="main__year-end">1917</span></h2>
+         <a href="./imperators/Nikola_2.html" class="main__active-name link-href">Николай II</a>
          <div class="main__overflow main__overflow_gold">
             <h1 class="main__header">Династия<br>Романовых</h1>
-            <h2 class="main__title main__black">Более 300 лет правления</h2>
-            <div class="main__picture-container">
-               <img src="<%=require('./images/index/Ipatiev_House_in_1930.jpg')%>" alt="Ипатьевский дом" class="main__picture">
-               <p>до Ипатьевского дома</p>
-            </div>
-            <div class="main__map main__map_1917">
-               <p class="main__map-description">Площадь страны 22,5 млн. км²</p>
-            </div>
-            <div class="main__people">
-               <p class="main__people-description">Население страны 175 млн. человек</p>
-            </div>
          </div>
-         <div class="main__overflow main__overflow_black">
-            <h2 class="main__title main__gold">Более 300 лет правления</h2>
-            <div class="main__picture-container">
-               <img src="<%=require('./images/index/NikanorChernecov_Vid_Ipatevskogo_monastyrja.jpg')%>" alt="Ипатьевский монастырь"
-                  class="main__picture">
-               <p>от Ипатьевского монастыря</p>
-            </div>
-            <div class="main__map main__map_1613">
-               <p class="main__map-description">Площадь страны- 5,8 млн. км²</p>
-            </div>
-            <div class="main__people">
-               <p class="main__people-description">Население страны - 11 млн. человек</p>
-            </div>
-         </div>
+      </section>
    </main>
+      <section class="popup popup_type_menu">
+         <div class="popup__menu">
+            <a href="./index.html" class="popup__title link-href">Главная страница</a>
+            <a href="./tree.html" class="popup__title link-href">Родословное дерево</a>
+            <a href="./timeline.html" class="popup__title link-href">События правления</a>
+            <div class="popup__title-container">
+               <p class="popup__title open-container">Цари и императоры</p>
+               <ul class="popup__subtitle-container">
+                  <li><a href="./imperators/MihFed.html" class="popup__subtitle link-href">Михаил Федорович</a></li>
+                  <li><a href="./imperators/AlexMik.html" class="popup__subtitle link-href">Алексей Михайлович</a></li>
+                  <li><a href="./imperators/Fedor.html" class="popup__subtitle link-href">Федор III</a></li>
+                  <li><a href="./imperators/Ivan_5.html" class="popup__subtitle link-href">Иван V</a></li>
+                  <li><a href="./imperators/Petr_1.html" class="popup__subtitle link-href">Петр I</a></li>
+                  <li><a href="./imperators/Catherine_1.html" class="popup__subtitle link-href">Екатерина I</a></li>
+                  <li><a href="./imperators/Petr_2.html" class="popup__subtitle link-href">Петр II</a></li>
+                  <li><a href="./imperators/AnnaIo.html" class="popup__subtitle link-href">Анна Иоанновна</a></li>
+                  <li><a href="./imperators/Ivan_6.html" class="popup__subtitle link-href">Иван VI</a></li>
+                  <li><a href="./imperators/ElisPetr.html" class="popup__subtitle link-href">Елизавета Петровна</a></li>
+                  <li><a href="./imperators/Petr_3.html" class="popup__subtitle link-href">Петр III</a></li>
+                  <li><a href="./imperators/Catherine_2.html" class="popup__subtitle link-href">Екатерина II</a></li>
+                  <li><a href="./imperators/Pavel_1.html" class="popup__subtitle link-href">Павел I</a></li>
+                  <li><a href="./imperators/Alex_1.html" class="popup__subtitle link-href">Александр I</a></li>
+                  <li><a href="./imperators/Nikola_1.html" class="popup__subtitle link-href">Николай I</a></li>
+                  <li><a href="./imperators/Alex_2.html" class="popup__subtitle link-href">Александр II</a></li>
+                  <li><a href="./imperators/Alex_3.html" class="popup__subtitle link-href">Александр III</a></li>
+                  <li><a href="./imperators/Nikola_2.html" class="popup__subtitle link-href">Николай II</a></li>
+               </ul>
+            </div>
+            <ion-icon name="close-circle-outline" class="popup__btnClose"></ion-icon>
+         </div>
+      </section>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

@@ -4,8 +4,8 @@
    background-size: contain;
    background-repeat: no-repeat;
    position: absolute;
-   left: calc(var(--index) * 5);
-   bottom: calc(var(--index) * 12);
+   left: calc(var(--index) * 7);
+   bottom: calc(var(--index) * 3);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 768px) {
    .main__map {
-      left: calc(var(--index) * 22);
+      left: calc(var(--index) * 27);
    }
 }
 
