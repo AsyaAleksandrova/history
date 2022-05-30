@@ -1,0 +1,30 @@
+.literature__picture {
+   background-size: 90px;
+   width: 100%;
+   height: 60px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #000000;
+}
+
+.literature__picture_arzamas{
+   background-image: url(../../../images/sources/arzamas-logo-white.svg);
+}
+
+.literature__picture_eltcin{
+   background-image: url(../../../images/sources/eltcin_library.png);
+}
+
+.literature__picture_enciklopedia{
+   background-image: url(../../../images/sources/enciklopedia.png);
+   background-size: 70px;
+}
+
+.literature__picture_starmedia{
+   background-image: url(../../../images/sources/starmedia.png);
+   background-size: 70px;
+}
+
+.literature__picture_youtube{
+   background-image: url(../../../images/sources/youtube-logo.png);
+}

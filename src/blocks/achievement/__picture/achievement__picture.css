@@ -1,0 +1,15 @@
+.achievement__picture {
+   width: 100%;
+   margin: 0;
+   object-fit: contain;
+   box-shadow: var(--shadow);
+}
+
+@media screen and (min-width: 1224px) {
+   .achievement__picture {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      margin-top: 20px;
+   }
+}

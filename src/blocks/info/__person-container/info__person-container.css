@@ -1,0 +1,18 @@
+.info__person-container {
+   padding: 0;
+   margin: 0;
+   width: fit-content;
+   height: fit-content;
+   transition: 0.5s;
+}
+
+.info__person-container_active {
+   width: 100%;
+   transition: 0s;
+}
+
+@media screen and (min-width: 768px) {
+   .info__person-container_active {
+      width: calc(50% - (var(--index) * 2));
+   }
+}

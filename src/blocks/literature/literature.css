@@ -1,0 +1,8 @@
+.literature {
+   background: linear-gradient(180deg, var(--color-background), rgba(184, 134, 11, 0.7) 40%);
+   padding: 80px calc(var(--index) * 2) 50px;
+   margin: 0;
+   color: var(--color-main);
+   position: relative;
+   text-align: center;
+}

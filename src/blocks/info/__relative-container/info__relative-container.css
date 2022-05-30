@@ -1,0 +1,11 @@
+.info__relative-container {
+   list-style-type: none;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: calc(var(--index) * 4);
+   row-gap: calc(var(--index) * 2);
+   margin: 20px 0 10px;
+   position: relative;
+}

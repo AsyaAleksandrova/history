@@ -1,0 +1,18 @@
+.info__relative-description {
+   display: none;
+   font-size: 14px;
+   margin: 4px 20px 4px 4px;
+   padding: 0;
+   transition: 0.5s;
+   transition-delay: 0s;
+   opacity: 0;
+   transform: scale(0);
+}
+
+.info__relative-description_active {
+   display: inline;
+   opacity: 1;
+   transition-delay: 0.5s;
+   animation: activationText 1s ease-in-out;
+   transform: scale(1);
+}

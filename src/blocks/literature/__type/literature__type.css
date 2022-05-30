@@ -1,0 +1,17 @@
+.literature__type {
+   font-size: 14px;
+   padding: 3px;
+   border-radius: 10px;
+}
+
+.literature__type_article{
+   background-color: #c9626c;
+}
+
+.literature__type_audio{
+   background-color: #98a04c;
+}
+
+.literature__type_video{
+   background-color: #5bb4fc;
+}

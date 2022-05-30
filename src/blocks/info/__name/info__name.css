@@ -3,18 +3,12 @@
    font-size: 35px;
    font-style: italic;
    font-weight: 400;
-   -webkit-transform: translateY(-500px);
-   -ms-transform: translateY(-500px);
    transform: translateY(-500px);
    color: #ffffff;
-   -webkit-transition: all 1s ease;
-   -o-transition: all 1s ease;
    transition: all 1s ease;
 }
 
 .info__name_drop {
-   -webkit-transform: translateY(0px);
-   -ms-transform: translateY(0px);
    transform: translateY(0px);
    color: var(--color-main);
 }

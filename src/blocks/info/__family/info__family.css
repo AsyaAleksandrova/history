@@ -1,0 +1,12 @@
+.info__family {
+   grid-row-start: 3;
+   grid-column-start: 1;
+}
+
+@media screen and (min-width: 1224px) {
+   .info__family {
+      grid-row-start: 1;
+      grid-row-end: 5;
+      grid-column-start: 2;
+   }
+}

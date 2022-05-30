@@ -1,0 +1,27 @@
+.info__relative-name {
+   font-size: 15px;
+   text-align: center;
+   margin: 5px 4px;
+   font-weight: 400;
+   transition: 0.5s;
+   transition-delay: 0s;
+}
+
+.info__relative-name_active {
+   text-align: start;
+   font-weight: 900;
+   transition-delay: 0.5s;
+   animation: activationText 1s ease-in-out;
+}
+
+@keyframes activationText {
+   0% {
+      transform: scale(0);
+   }
+   50% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}

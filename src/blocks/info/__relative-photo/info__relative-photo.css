@@ -1,0 +1,40 @@
+.info__relative-photo {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   font-size: 0px;
+   position: absolute;
+   top: -20px;
+   right: -25px;
+   color: #000000;
+   border: 1px solid var(--color-main);
+   background-color: var(--color-gradient);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s;
+   transition-delay: 0s;
+   transform: scale(0);
+   overflow: hidden;
+}
+
+.info__relative-photo_active {
+   transform: scale(1);
+   top: -60px;
+   right: -20px;
+   font-size: 40px;
+   transition-delay: 1s;
+}
+
+@media screen and (min-width: 768px) {
+   .info__relative-photo_active {
+      top: -50px;
+      right: -50px;
+   }
+}
+
+.info__relative-photo-picture{
+   object-fit: cover;
+   width: inherit;
+   height: inherit;
+}

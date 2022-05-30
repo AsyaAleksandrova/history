@@ -1,0 +1,48 @@
+.info__person {
+   background-color: transparent;
+   backdrop-filter: blur(5px);
+   border-radius: 50%;
+   box-shadow: 5px 4px 20px -5px #000000,
+      inset -2px -2px 20px -3px var(--color-gradient);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: 1s;
+   transition-delay: 0.5s;
+   cursor: pointer;
+}
+
+.info__consort {
+   width: 150px;
+   height: 150px;
+   min-height: 150px;
+}
+
+.info__child {
+   width: 130px;
+   height: 130px;
+   min-height: 130px;
+}
+
+.info__person_active {
+   width: 100%;
+   height: fit-content;
+   border-radius: 10px;
+   align-items: flex-start;
+   transition-delay: 0s;
+   animation: activation 1s ease-in-out;
+}
+
+@keyframes activation {
+   0% {
+      height: 150px;
+   }
+   40% {
+      height: 130px;
+   }
+   100% {
+      height: fit-content;
+   }
+}

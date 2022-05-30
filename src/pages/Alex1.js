@@ -16,14 +16,14 @@ document.querySelector('.header__burger').addEventListener('click', () => popupM
 
 
 
-const consort = document.querySelectorAll('.info_person-container');
+const consort = document.querySelectorAll('.info__person-container');
 const title = document.querySelector('.info__name');
 const backPicture = document.querySelector('.parallax');
-const allText = document.querySelectorAll('.dinamic');
+const allText = document.querySelectorAll('.personal-page__dynamic');
 
 consort.forEach(card => {
    card.addEventListener('click', () => {
-      card.classList.toggle('info_person-container_active');
+      card.classList.toggle('info__person-container_active');
       card.querySelector('.info__person').classList.toggle('info__person_active')
       card.querySelector('.info__relative-name').classList.toggle('info__relative-name_active');
       card.querySelector('.info__relative-description').classList.toggle('info__relative-description_active');

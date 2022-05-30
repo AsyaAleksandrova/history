@@ -1,0 +1,4 @@
+.achievement {
+   z-index: 2;
+   padding: 0 calc(var(--index) * 2);
+}

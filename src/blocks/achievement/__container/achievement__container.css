@@ -1,0 +1,7 @@
+@media screen and (min-width: 1224px) {
+   .achievement__container {
+      display: grid;
+      column-gap: 30px;
+      grid-template-columns: 1fr 40%;
+   }
+}
