@@ -4,6 +4,96 @@
    background-image: url('../../../images/Alex_1/triumf_rusarmy_Paris_Troshin.jpeg');
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: 40%;
    z-index: 0;
 }
+
+.personal-page__background_MihFed {
+   background-image: url('../../../images/MikFed/MikhaelFedorovich_3.jpg');
+   background-position: 40%;
+}
+
+.personal-page__background_AlexMih {
+   background-image: url('../../../images/AlexMik/AlekseyTishaishiy_3.jpg');
+   background-position: 30%;
+}
+
+.personal-page__background_Fedor3 {
+   background-image: url('../../../images/Fedor/Staraya_Moskva_Vasnetsov.jpeg');
+   background-position: 10%;
+}
+
+.personal-page__background_Ivan5 {
+   background-image: url('../../../images/Ivan_5/Streletskiy_bunt.jpeg');
+   background-position: 40%;
+}
+
+.personal-page__background_Petr1 {
+   background-image: url('../../../images/Petr_1/ship-building.webp');
+   background-position: 60%;
+}
+
+.personal-page__background_Catherine1 {
+   background-image: url('../../../images/Catherine_1/dvorcovue_perevorotu.webp');
+   background-position: 80%;
+}
+
+.personal-page__background_Petr2 {
+   background-image: url('../../../images/Petr_2/serov-petr-ii-i-cesarevna-elizaveta-na-psovoi-ohote_cut.jpg');
+   background-position: 75%;
+}
+
+.personal-page__background_AnnaIo {
+   background-image: url('../../../images/AnnaIo/fun.jpeg');
+   background-position: 70%;
+}
+
+.personal-page__background_Ivan6 {
+   background-image: url('../../../images/Ivan_6/Perevorot.jpeg');
+   background-position: 40%;
+}
+
+.personal-page__background_ElisPetr {
+   background-image: url('../../../images/ElisPetr/ball_3.webp');
+   background-position: center;
+}
+
+.personal-page__background_Petr3 {
+   background-image: url('../../../images/Petr_3/Petr_3_death.jpg');
+   background-position: 40%;
+}
+
+.personal-page__background_Catherine2 {
+   background-image: url('../../../images/Catherine_2/gvardeicy.jpeg');
+   background-position: 55%;
+}
+
+.personal-page__background_Pavel1 {
+   background-image: url('../../../images/Pavel_1/Family_of_Paul_I.jpeg');
+   background-position: 60%;
+}
+
+.personal-page__background_Alex1 {
+   background-image: url('../../../images/Alex_1/triumf_rusarmy_Paris_Troshin.jpeg');
+   background-position: 40%;
+}
+
+.personal-page__background_Nikola1 {
+   background-image: url('../../../images/Nikola_1/soldafon.jpeg');
+   background-position: 40%;
+}
+
+.personal-page__background_Alex2 {
+   background-image: url('../../../images/Alex_2/otmena_krepostnichestva.webp');
+   background-position: 45%;
+}
+
+.personal-page__background_Alex3 {
+   background-image: url('../../../images/Alex_3/Aleksandr_III_volostnye.webp');
+   background-position: 40%;
+}
+
+.personal-page__background_Nikola2 {
+   background-image: url('../../../images/Nikola_2/last_family.jpeg');
+   background-position: 55%;
+}
+
