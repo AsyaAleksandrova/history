@@ -1,0 +1,9 @@
+.personal-page {
+   margin: 0;
+   width: 100vw;
+   overflow: hidden;
+   color: var(--color-main);
+   letter-spacing: 1.5px;
+   display: flex;
+   flex-direction: column;
+}

@@ -36,12 +36,12 @@ export class PortraitInfiniteRotation{
    rotateBackward() {
       this._resetAll();
       this._sides[this._pos].setAttribute('style', this._backVisible);
-      if (!(this._pos - 1)) {
+      if (this._pos == 0) {
          this._pos = this._sides.length - 1;
       } else {
          this._pos = this._pos - 1;
       }
-      if (!(this._pos - 1)) {
+      if (this._pos == 0) {
          this._sides[this._sides.length - 1].setAttribute('style', this._other);
       } else {
          this._sides[this._pos - 1].setAttribute('style', this._other);

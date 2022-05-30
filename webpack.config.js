@@ -7,7 +7,9 @@ module.exports = {
    entry: {
       index: './src/pages/index.js',
       tree: './src/pages/tree.js',
-      timeline: './src/pages/timeline.js'
+      timeline: './src/pages/timeline.js',
+      Alex1: './src/pages/Alex1.js'
+      
    },
    output: {
       path: path.resolve(__dirname, 'dist'),
@@ -55,7 +57,11 @@ module.exports = {
       new HtmlWebpackPlugin({
          filename: 'timeline.html',
          template: './src/timeline.html'
-      }),      
+      }),  
+      new HtmlWebpackPlugin({
+         filename: 'Alex1.html',
+         template: './src/Alex1.html'
+      }),       
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin()
    ]

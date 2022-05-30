@@ -1,0 +1,8 @@
+.info__container {
+   list-style-type: none;
+   padding: 0 calc(var(--index) * 2);
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: repeat(3, auto);
+   column-gap: 25px;
+}

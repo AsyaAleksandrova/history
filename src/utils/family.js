@@ -1,7 +1,7 @@
 export const family = [
    {
       name: 'Михаил Федорович',
-      link: './imperators/MihFed.html',
+      link: './imperators/MihailFedorovich.html',
       yearStart: '1613',
       yearEnd: '1645'
    },
@@ -79,7 +79,7 @@ export const family = [
    },
    {
       name: 'Александр I',
-      link: './imperators/Alex_1.html',
+      link: './Alex1.html',
       yearStart: '1801',
       yearEnd: '1825'
    },

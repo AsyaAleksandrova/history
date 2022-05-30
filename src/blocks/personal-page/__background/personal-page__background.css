@@ -1,0 +1,9 @@
+.personal-page__background {
+   width: 100vw;
+   height: calc(110 * var(--vh));
+   background-image: url('../../../images/Alex_1/triumf_rusarmy_Paris_Troshin.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 40%;
+   z-index: 0;
+}

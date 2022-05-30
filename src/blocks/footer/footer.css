@@ -1,0 +1,25 @@
+.footer{
+   background-color: var(--color-background);
+   margin: 0;
+   padding: 10px calc(var(--index) * 2);
+   height: 60px;
+   width: 100%;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer__logo{
+   margin: 0 10px;
+   width: 40px;
+   filter: invert(var(--invert));
+}
+
+.footer__text{
+   font-weight: 700;
+   font-style: italic;
+   text-decoration: none;
+   color: var(--color-main);
+}
