@@ -1,0 +1,22 @@
+.main__arrow {
+   color: var(--color-main);
+   width: calc(2.5 * var(--index));
+   height: calc(2.5 * var(--index));
+   opacity: 0.5;
+   position: absolute;
+   top: calc(10% + (14 * var(--index)));
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.main__arrow_left {
+   left: calc(10% - (1.5 * var(--index)));
+}
+
+.main__arrow_right {
+   left: calc(10% + (11 * var(--index)));
+}
+
+.main__arrow:hover {
+   opacity: 1;
+}

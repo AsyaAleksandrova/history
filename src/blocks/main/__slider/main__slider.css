@@ -1,0 +1,8 @@
+.main__slider{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   width: calc(10 * var(--index));
+   height: calc(15 * var(--index));
+   cursor: pointer;
+}

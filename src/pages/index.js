@@ -15,8 +15,7 @@ document.querySelector('.header__burger').addEventListener('click', () => popupM
 
 import { PortraitInfiniteRotation } from '../componenets/PortraitInfiniteRotation.js';
 
-const container = document.querySelector('.onload')
-const portraits = document.querySelectorAll('.onload__portrait');
+const container = document.querySelector('.main__slider')
 const arrowNext = document.querySelector('.main__arrow_right');
 const arrowPrev = document.querySelector('.main__arrow_left');
 const name = document.querySelector('.main__active-name');
@@ -25,7 +24,6 @@ const yearEnd = document.querySelector('.main__year-end');
 
 import { family } from '../utils/family.js';
 
-
 const changeName = () => {
    const currentName = container.querySelector('.active').alt;
    name.textContent = currentName;
@@ -33,38 +31,19 @@ const changeName = () => {
       if (person.name == currentName) {
          yearStart.textContent = person.yearStart;
          yearEnd.textContent = person.yearEnd;
+         name.href = person.link.concat('#' + ThemePage._themePage);
       }
    })
 }
 
-const fixPortrait = (portrait) => {
-   portrait.classList.add('onload__portrait_fixed');
-}
-
-const intervalFix = (portraits) => {
-   for (let i = 0; i < 4; i++){
-      setTimeout(fixPortrait, 1000, portraits[i]);
-   }
-   for (let i = 4; i < portraits.length; i++){
-      let t = ((i - 3)* 1000);
-      setTimeout(fixPortrait, t, portraits[i]);
-   }
-   setTimeout(() => {
-      container.classList.add('onload_fixed');
-      portraits.forEach(portrait => portrait.classList.add('main__shadow'));
-      const portraitSlider = new PortraitInfiniteRotation(container, '.onload__portrait', 2);
-      portraitSlider.setInfiniteSlider();
-      container.addEventListener('click', () => changeName());
-      arrowPrev.addEventListener('click', () => {
-         portraitSlider.rotateBackward();
-         changeName();
-      });
-      arrowNext.addEventListener('click', () => {
-         portraitSlider.rotateForward();
-         changeName();
-      });
-   }, 15000);
-}
-
-intervalFix(portraits);
-
+const portraitSlider = new PortraitInfiniteRotation(container, '.main__portrait', 2);
+portraitSlider.setInfiniteSlider();
+container.addEventListener('click', () => changeName());
+arrowPrev.addEventListener('click', () => {
+   portraitSlider.rotateBackward();
+   changeName();
+});
+arrowNext.addEventListener('click', () => {
+   portraitSlider.rotateForward();
+   changeName();
+});
