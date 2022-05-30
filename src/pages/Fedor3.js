@@ -1,4 +1,4 @@
-import './Alex1.css'
+import './Fedor3.css'
 
 import { Theme } from '../componenets/Theme.js';
 const ThemePage = new Theme('.header__theme-switcher',("themesun", "thememon"), '.link-href');

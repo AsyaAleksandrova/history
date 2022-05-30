@@ -1,13 +1,13 @@
 export const family = [
    {
       name: 'Михаил Федорович',
-      link: './MihailFedorovich.html',
+      link: './MihFed.html',
       yearStart: '1613',
       yearEnd: '1645'
    },
    {
       name: 'Алексей Михайлович',
-      link: './AlexMik.html',
+      link: './AlexMih.html',
       yearStart: '1645',
       yearEnd: '1676'
    },

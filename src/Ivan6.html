@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <link rel="icon" href="<%=require('./images/icons/crown.png')%>"> 
+   <title>Династия Романовых</title>
+</head>
+<body class="root root_theme_light">
+   <header class="header">
+      <ion-icon name="list-circle-outline" class="header__burger"></ion-icon>
+      <a href="./index.html " class="header__title link-href">Династия Романовых</a>
+      <button type="button" class="header__theme-switcher header__theme-switcher_light"></button>
+   </header>
+
+   <main class="personal-page">
+      <div class="personal-page__background parallax"></div>
+      <section class="info">
+         <ul class="info__container">
+            <li class="info__main">
+               <h1 class="info__name">Иван VI</h1>
+               <img src="<%=require('./images/portraits/Ivan-4.jpg')%>" alt="" class="info__portrait">
+               <div class="info__text">
+               <p class="info__text personal-page__dynamic">Годы жизни:<br>
+                  12&nbsp;августа&nbsp;1740&nbsp;г. – 5&nbsp;июля&nbsp;1764&nbsp;г.</p>
+               <p class="info__text personal-page__dynamic">Годы правления:<br>
+                  17&nbsp;октября&nbsp;1740&nbsp;г. – 25&nbsp;ноября&nbsp;1741&nbsp;г.</p>
+               </div>
+
+            </li>
+            <li class="info__text">
+               <h2 class="personal-page__title">Характеристика</h2>
+               <p class="personal-page__dynamic"></p>
+            </li>
+            <li class="info__family">
+               <h2 class="personal-page__title">Семья</h2>
+               <p class="info__text personal-page__dynamic"></p>
+               <ul style="padding: 0;">
+                  <div class="info__relative-container">
+                     <li class="info__person-container">
+                        <div class="info__person info__consort">
+                           <h3 class="info__relative-name"></h3>
+                           <p class="info__relative-description"></p>
+                           <div class="info__relative-photo">
+                              <img src="" alt="" class="info__relative-photo-picture">
+                           </div>
+                        </div>
+                     </li>
+                  </div>
+                  <div class="info__relative-container">
+                     <li class="info__person-container">
+                        <div class="info__person info__child">
+                           <h3 class="info__relative-name"></h3>
+                           <p class="info__relative-description"></p>
+                           <div class="info__relative-photo">?</div>
+                        </div>
+                     </li>
+                     <li class="info__person-container">
+                        <div class="info__person info__child">
+                           <h3 class="info__relative-name"></h3>
+                           <p class="info__relative-description"></p>
+                           <div class="info__relative-photo">?</div>
+                        </div>
+                     </li>
+                  </div>
+               </ul>
+            </li>
+         </ul>
+      </section>
+      <section class="achievement">
+         <h2 class="personal-page__title">Итоги правления</h2>
+         <ul style="padding: 0;">
+            <li class="achievement__direction">
+               <h3 class="achievement__title">Внешняя политика</h3>
+               <div class="achievement__container">
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <img class="achievement__picture" src="" alt="">
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+               </div> 
+
+            </li>
+            <li class="achievement__direction">
+               <h3 class="achievement__title">Внутреняя политика</h3>
+               <div class="achievement__container">
+                  <img class="achievement__picture" src="" alt="">
+                  <p class="achievement__text personal-page__dynamic"><span class="achievement_span"></span></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+               </div>
+            </li>
+            <li class="achievement__direction">
+               <h3 class="achievement__title">Культура и образование</h3>
+               <div class="achievement__container">
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <img class="achievement__picture" src="" alt="">
+                  <p class="achievement__text personal-page__dynamic"></p>
+                  <p class="achievement__text personal-page__dynamic"></p>
+               </div>
+            </li>
+         </ul>
+      </section>
+      <section class="literature">
+         <h2 class="personal-page__title">Материалы по теме в открытом доступе:</h2>
+         <ul class="literature__container">
+
+         </ul>
+
+      </section>
+   </main>
+   <footer class="footer">
+      <p class="footer__text">&copy; 2022 Asya 
+         <a href="https://t.me/ASYaLUM" class="footer__text"> #tme</a>
+      </p>
+      <img src="<%=require('./images/sources/logo_white.png')%>" alt="Логотип" class="footer__logo">
+   </footer>
+      <section class="popup popup_type_menu">
+         <div class="popup__menu">
+            <a href="./index.html" class="popup__title link-href">Главная страница</a>
+            <a href="./tree.html" class="popup__title link-href">Родословное дерево</a>
+            <a href="./timeline.html" class="popup__title link-href">События правления</a>
+            <div class="popup__title-container">
+               <p class="popup__title open-container">Цари и императоры</p>
+               <ul class="popup__subtitle-container">
+                  <li><a href="./MihFed.html" class="popup__subtitle link-href">Михаил Федорович</a></li>
+                  <li><a href="./AlexMih.html" class="popup__subtitle link-href">Алексей Михайлович</a></li>
+                  <li><a href="./Fedor3.html" class="popup__subtitle link-href">Федор III</a></li>
+                  <li><a href="./Ivan5.html" class="popup__subtitle link-href">Иван V</a></li>
+                  <li><a href="./Petr1.html" class="popup__subtitle link-href">Петр I</a></li>
+                  <li><a href="./Catherine1.html" class="popup__subtitle link-href">Екатерина I</a></li>
+                  <li><a href="./Petr2.html" class="popup__subtitle link-href">Петр II</a></li>
+                  <li><a href="./AnnaIo.html" class="popup__subtitle link-href">Анна Иоанновна</a></li>
+                  <li><a href="./Ivan6.html" class="popup__subtitle link-href">Иван VI</a></li>
+                  <li><a href="./ElisPetr.html" class="popup__subtitle link-href">Елизавета Петровна</a></li>
+                  <li><a href="./Petr3.html" class="popup__subtitle link-href">Петр III</a></li>
+                  <li><a href="./Catherine2.html" class="popup__subtitle link-href">Екатерина II</a></li>
+                  <li><a href="./Pavel1.html" class="popup__subtitle link-href">Павел I</a></li>
+                  <li><a href="./Alex1.html" class="popup__subtitle link-href">Александр I</a></li>
+                  <li><a href="./Nikola1.html" class="popup__subtitle link-href">Николай I</a></li>
+                  <li><a href="./Alex2.html" class="popup__subtitle link-href">Александр II</a></li>
+                  <li><a href="./Alex3.html" class="popup__subtitle link-href">Александр III</a></li>
+                  <li><a href="./Nikola2.html" class="popup__subtitle link-href">Николай II</a></li>
+               </ul>
+            </div>
+            <ion-icon name="close-circle-outline" class="popup__btnClose"></ion-icon>
+         </div>
+      </section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
