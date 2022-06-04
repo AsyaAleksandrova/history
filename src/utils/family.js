@@ -1,7 +1,7 @@
 export const family = [
    {
       name: 'Михаил Федорович',
-      link: './MihFed.html',
+      link: './pages/personalpages/MihFed.html',
       yearStart: '1613',
       yearEnd: '1645'
    },
@@ -85,7 +85,7 @@ export const family = [
    },
    {
       name: 'Николай I',
-      link: './Nikola_1.html',
+      link: './Nikola1.html',
       yearStart: '1825',
       yearEnd: '1855'
    },

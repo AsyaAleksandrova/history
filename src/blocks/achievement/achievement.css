@@ -1,4 +1,5 @@
 .achievement {
    z-index: 2;
+   background-color: var(--color-background);
    padding: 0 calc(var(--index) * 2);
 }
