@@ -20,13 +20,13 @@ const url_19 = new URL('../images/AlexMik/AlexeyMihajlovichin_1664.jpg', import.
 const url_20 = new URL('../images/Ivan_5/Simeon_Polotskiy.jpeg', import.meta.url);
 const url_21 = new URL('../images/AlexMik/StepanRazin.jpeg', import.meta.url);
 const url_22 = new URL('../images/AlexMik/Orel.jpeg', import.meta.url);
-const url_23 = new URL('../images/AlexMik/Solovki.jpg', import.meta.url);
+const url_23 = new URL('../images/AlexMik/Solovki.jpeg', import.meta.url);
 const url_24 = new URL('../images/Fedor/Otmena_mestnichestva.jpeg', import.meta.url);
 const url_25 = new URL('../images/Ivan_5/Streletskiy_bunt.jpeg', import.meta.url);
 const url_26 = new URL('../images/Ivan_5/Ioann_Petr_Sofia_Vereshagin.jpeg', import.meta.url);
 const url_27 = new URL('../images/Ivan_5/Spor_o_vere.jpg', import.meta.url);
 const url_28 = new URL('../images/Ivan_5/Albazin.jpeg', import.meta.url);
-const url_29 = new URL('../images/Ivan_5/Sofia_Repin.jpeg', import.meta.url);
+const url_29 = new URL('../images/Ivan_5/Sofia_Repin_Tratiakovka.jpg', import.meta.url);
 const url_30 = new URL('../images/Petr_1/Azovski_pohod.jpg', import.meta.url);
 const url_31 = new URL('../images/Petr_1/Petr_v_Europe.jpeg', import.meta.url);
 const url_32 = new URL('../images/Petr_1/vedomosti.jpeg', import.meta.url);
@@ -57,16 +57,16 @@ export const photoList = [
    {
       yearStart: 1618,
       source: url_4,
-      description: `Патриарх Филарет, отец царя Михаила Федоровича, был освобожден из польского плена по итогам подписания Деулинского перемирия с Речью Посполитой (фрагмент картины, Н. Тютрюмов) © Wikimedia Commons`,
-      refLink: ``,
-      refName: ``   
+      description: `Патриарх Филарет, отец царя Михаила Федоровича, был освобожден из польского плена по итогам подписания Деулинского перемирия с Речью Посполитой (фрагмент картины, Н. Тютрюмов)`,
+      refLink: `https://commons.wikimedia.org/wiki/File:Philaret.jpg`,
+      refName: `© Wikimedia Commons`   
    },
    {
       yearStart: 1630,
       source: url_5,
       description: `Гонцы. Ранним утром в Кремле. Начало XVII века (картина, А. Васнецов)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Heralds._Early_morning_in_Kremlin._Beginning_of_XVII_century.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1628,
@@ -88,8 +88,8 @@ export const photoList = [
       yearStart: 1632,
       source: url_8,
       description: `Польское войско. Осада Смоленска (картина, Ю. Коссак)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Juliusz_Kossak_Odsiecz_Smolenska.jpeg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1633,
@@ -102,8 +102,8 @@ export const photoList = [
       yearStart: 1648,
       source: url_10,
       description: `Соляной бунт в Москве (картина, Э.Лисснер)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Salt_riot_moscow_1648.jpeg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1649,
@@ -130,23 +130,25 @@ export const photoList = [
    {
       yearStart: 1652,
       source: url_14,
-      description: `Немецкая слобода в Москве (гравюра, А.Шхонебек)`,
-      refLink: ``,
-      refName: ``         
+      description: `Немецкая слобода в Москве (гравюра, А.Шхонебек). На переднем плане, на левом берегу Яузы, - ряд богатых зданий, окруженный садами. 
+      Центральный дворец Головина, постройка которого была окончена в 1703 году, никак не выделен: виден лишь его боковой фасад. За рекой, на правом берегу Яузы,
+      располагается Немецкая слобода, дворец Лефорта, и далее за холмами на горизонте Москва.`,
+      refLink: `http://www.russianprints.ru/printmakers/sh/schoonebeck_adrian/golovin_house1.shtml`,
+      refName: `© Государственный музей изобразительных искусств имени А.С.Пушкина`         
    },
    {
       yearStart: 1654,
       source: url_15,
-      description: `Патриарх Никон пересматривает богослужебные книги (картина, А.Кившенко)  © Wikimedia Commons`,
-      refLink: ``,
-      refName: ``         
+      description: `Патриарх Никон пересматривает богослужебные книги (картина, А.Кившенко)`,
+      refLink: `https://commons.wikimedia.org/wiki/File:Patriarch_Nikon_Revising_Service-Books.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1656,
       source: url_16,
       description: `Стефан Чарнецкий во время польско-русской войны (картина, Януарий Суходольский)`,
-      refLink: ``,
-      refName: ``        
+      refLink: `https://commons.wikimedia.org/wiki/File:Stefan_Czarniecki_during_Polish-Russian_War.png`,
+      refName: `© Wikimedia Commons`        
    },   
    {
       yearStart: 1661,
@@ -160,50 +162,50 @@ export const photoList = [
       yearStart: 1662,
       source: url_18,
       description: `Медный бунт (картина, Э.Лиссннер)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Copper_Riot_-_Ernest_Lissner.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1664,
       source: url_19,
       description: `Выезд царя Алексея Михайловича на смотр войск в 1664 году (картина, Н.Е. Сверчков)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Tsar_Alexey_Mihajlovich_on_review_of_armies_in_1664.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1665,
       source: url_20,
       description: `Симеон Полоцкий был наставником детей Алексея Михайловича (Ивана, Федора, Софьи и Петра).`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://www.culture.ru/persons/10574/simeon-polockii`,
+      refName: `© Минкультуры России`
    },
    {
       yearStart: 1668,
       source: url_21,
       description: `Степан Разин (картина, Кустодиев)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Kustodiev_razin.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1670,
       source: url_22,
-      description: `Модель фрегата "Орел" - первого русского корабля западноевропейского типа (Железняков Ю.)`,
-      refLink: ``,
-      refName: ``         
+      description: `Фрегат "Орел" - первый русский корабль западноевропейского типа`,
+      refLink: `http://korabley.net/news/2008-10-26-40`,
+      refName: `© Shipshub`         
    },
    {
       yearStart: 1672,
       source: url_23,
       description: `Спасо-Преображенский Соловецкий монастырь`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://solovki-monastyr.ru/photo/grad/`,
+      refName: `© Спасо-Преображенский Соловецкий ставропигиальный мужской монастырь`         
    },
    {
       yearStart: 1682,
       source: url_24,
-      description: `Сожжение местнических книг в 1682 году при царе Федоре Алексеевиче`,
-      refLink: ``,
-      refName: ``         
+      description: `Сожжение местнических книг в 1682 году при царе Федоре Алексеевиче (иллюстрация из журнала Нива)`,
+      refLink: `https://runivers.ru/gallery_new/?SECTION_ID=19653&ELEMENT_ID=589033`,
+      refName: `© Руниверс`         
    }, 
    {
       yearStart: 1682,
@@ -211,22 +213,22 @@ export const photoList = [
       description: `Стрелецкий бунт (картина, Н.Д. Дмитриев-Оренбургский) Поводом для волнения стрельцов стало ложное известие о смерти царевича Иоанна, 
       распространенное Милославскими. Взбудораженное войско явилось в Кремль с требованием выдать им Нарышкиных, «замучивших» царевича. Желая усмирить и 
       образумить стрельцов, к ним на Красное крыльцо Грановитой палаты вышли царица Наталья Кирилловна с обоими царевичами.`,
-      refLink: ``,
-      refName: ``      
+      refLink: `https://commons.wikimedia.org/wiki/File:Orenburgsky.jpg`,
+      refName: `© Wikimedia Commons`      
    },   
    {
       yearStart: 1683,
       source: url_26,
       description: `Цари Иоанн и Пётр Алексеевичи. Правительница Софья Алексеевна. 1682-1689 (рисунок, В. Верещагин)`,
-      refLink: ``,
-      refName: ``      
+      refLink: `https://commons.wikimedia.org/wiki/File:57_History_of_the_Russian_state_in_the_image_of_its_sovereign_rulers.jpg`,
+      refName: `© Wikimedia Commons`      
    },
    {
       yearStart: 1685,
       source: url_27,
       description: `Никита Пустосвят. Спор о вере. (картина, В. Перов). Суздальский священник Никита Добрынин, по прозвищу Пустосвят, был лидером раскольников — старообрядцев. Прения о вере состоялись в Москве в 1682 году при участии Софьи Алексеевны.`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Nikita_Pustosviat._Dispute_on_the_Confession_of_Faith.jpg`,
+      refName: `© Wikimedia Commons`         
    },
    {
       yearStart: 1686,
@@ -246,15 +248,15 @@ export const photoList = [
       yearStart: 1695,
       source: url_30,
       description: `Азовские походы Петра I`,
-      refLink: ``,
-      refName: ``      
+      refLink: `https://www.sedmitza.ru/text/407609.html`,
+      refName: `© Православная Энциклопедия`      
    },  
    {
       yearStart: 1697,
       source: url_31,
       description: `Петр I в Голландии (неизвестный голландский художник)`,
-      refLink: ``,
-      refName: ``         
+      refLink: `https://commons.wikimedia.org/wiki/File:Peter_I_in_Holland.jpg`,
+      refName: `© Wikimedia Commons`         
    },  
    {
       yearStart: 1703,
