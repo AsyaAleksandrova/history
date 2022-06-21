@@ -30,6 +30,14 @@ const url_29 = new URL('../images/Ivan_5/Sofia_Repin_Tratiakovka.jpg', import.me
 const url_30 = new URL('../images/Petr_1/Azovski_pohod.jpg', import.meta.url);
 const url_31 = new URL('../images/Petr_1/Petr_v_Europe.jpeg', import.meta.url);
 const url_32 = new URL('../images/Petr_1/vedomosti.jpeg', import.meta.url);
+const url_33 = new URL('../images/Petr_1/Fili_chirch.jpeg', import.meta.url);
+const url_34 = new URL('../images/Petr_1/Alexey_Zubov_-_Panoramic_View_of_St._Petersburg.jpg', import.meta.url);
+const url_35 = new URL('../images/Petr_1/lubok_bible.webp', import.meta.url);
+const url_37 = new URL('../images/Petr_1/Aivazovski_Petr1.jpeg', import.meta.url);
+const url_36 = new URL('../images/ElisPetr/lubok_mise_cat.webp', import.meta.url);
+
+
+
 
 
 export const photoList = [
@@ -243,6 +251,13 @@ export const photoList = [
       description: `Царевна Софья Алексеевна через год после заключения её в Новодевичьем монастыре, во время казни стрельцов и пытки всей её прислуги в 1698 году (картина, И. Репин)`,
       refLink: ``,
       refName: ``       
+   },   
+   {
+      yearStart: 1694,
+      source: url_33,
+      description: `Церковь Покрова в Филях в Москве - образец раннего московского барокко. Церковь сохранилась до наших дней и является объектом культурного наследия`,
+      refLink: ``,
+      refName: ``      
    },     
    {
       yearStart: 1695,
@@ -251,6 +266,15 @@ export const photoList = [
       refLink: `https://www.sedmitza.ru/text/407609.html`,
       refName: `© Православная Энциклопедия`      
    },  
+   {
+      yearStart: 1695,
+      source: url_35,
+      description: `Иллюстрация - лубок из издания "Библия для народа". В 1692—1696 русский гравер Василий Корень отпечатал Библию в картинах, аналогичную западным «Библиям бедняков». 
+      Она включает серию раскрашенных гравюр с подписями на сюжеты из Книги Бытия и Апокалипсиса. Некоторые изображения Христа были признаны неканоническими, 
+      поэтому весь тираж уничтожили. Сегодня единственный неполный экземпляр этой книги хранится в Российской национальной библиотеке Санкт-Петербурга.`,
+      refLink: `https://renesans.ru/russian_artist/koren-v.shtml`,
+      refName: `© Ренессанс`    
+   },     
    {
       yearStart: 1697,
       source: url_31,
@@ -266,5 +290,27 @@ export const photoList = [
       refLink: `https://expositions.nlr.ru/fond/paper/gallery.php`,
       refName: `Галерея газетного фонда →`      
    },      
-
+   {
+      yearStart: 1716,
+      source: url_34,
+      description: `Гравюра «Панорама Санкт-Петербурга», 1716 год, Алексей Зубов. Братья Зубовы стали первыми, кто превращал документы вроде чертежей и карт в художественные произведения, выдерживая при этом их точность.
+      Гравюра выполнена на 8 листах по указу государя императора Петра Великого`,
+      refLink: `https://commons.wikimedia.org/wiki/File:Alexey_Zubov_-_Panoramic_View_of_St._Petersburg.jpg`,
+      refName: `© Wikimedia Commons`      
+   }, 
+   {
+      yearStart: 1714,
+      source: url_37,
+      description: `Пётр I при Красной Горке, зажигающий костёр на берегу для подачи сигнала гибнущим судам своим. И.К. Айвазовский. 
+      В основе сюжета — исторический эпизод 1714 года в период Северной войны, когда во время бури в Финском заливе ветер вынес корабли русской эскадры на мель.`,
+      refLink: `https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%82%D1%80_I_%D0%BF%D1%80%D0%B8_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%B3%D0%BE%D1%80%D0%BA%D0%B5_%D0%90%D0%B9%D0%B2%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg?uselang=ru`,
+      refName: `© Wikimedia Commons`      
+   },      
+   {
+      yearStart: 1760,
+      source: url_36,
+      description: `Лубок «Мыши кота погребают». Неизвестный русский художник, 1760 г.`,
+      refLink: `https://artchive.ru/encyclopedia/4406~Lubok`,
+      refName: `© Arthive`      
+   },    
 ]
